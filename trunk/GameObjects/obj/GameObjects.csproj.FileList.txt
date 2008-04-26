@@ -1,0 +1,5 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\GameObjects.dll
+bin\Debug\GameObjects.pdb
+obj\Debug\GameObjects.dll
+obj\Debug\GameObjects.pdb

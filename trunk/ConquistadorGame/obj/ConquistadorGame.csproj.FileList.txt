@@ -1,0 +1,15 @@
+bin\Debug\ConquistadorGame.exe
+bin\Debug\ConquistadorGame.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ConquistadorGame.Game.resources
+obj\Debug\ConquistadorGame.Properties.Resources.resources
+obj\Debug\ConquistadorGame.csproj.GenerateResource.Cache
+obj\Debug\ConquistadorGame.exe
+obj\Debug\ConquistadorGame.pdb
+obj\Debug\ConquistadorGame.UserControls.GameBoardUserControl.resources
+bin\Debug\GameObjects.dll
+bin\Debug\GameObjects.pdb
+obj\Debug\ConquistadorGame.UserControls.DiceRollUserControl.resources
+obj\Debug\ConquistadorGame.ConfigureForm.resources
+bin\Debug\ConquistadorGame.exe.config
+obj\Debug\ConquistadorGame.Model.UserControls.PlayerScoreUserControl.resources

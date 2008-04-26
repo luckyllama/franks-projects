@@ -1,0 +1,180 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{548FEFD9-76A6-49B2-AAC7-1291D58DF96B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConquistadorGame</RootNamespace>
+    <AssemblyName>ConquistadorGame</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\RoundRectangleCreater.cs" />
+    <Compile Include="Controller\SoundController.cs" />
+    <Compile Include="Model\ConfigureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\ConfigureForm.Designer.cs">
+      <DependentUpon>ConfigureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\Game.Designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UserControls\DiceRollUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\UserControls\DiceRollUserControl.Designer.cs">
+      <DependentUpon>DiceRollUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UserControls\GameBoardUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\UserControls\GameBoardUserControl.Designer.cs">
+      <DependentUpon>GameBoardUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UserControls\PlayerScoreUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\UserControls\PlayerScoreUserControl.Designer.cs">
+      <DependentUpon>PlayerScoreUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Model\ConfigureForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConfigureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Game.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\UserControls\DiceRollUserControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DiceRollUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\UserControls\GameBoardUserControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GameBoardUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\UserControls\PlayerScoreUserControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PlayerScoreUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameObjects\GameObjects.csproj">
+      <Project>{428AD3E4-B479-4336-9862-1C20A8546A54}</Project>
+      <Name>GameObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BigDie_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallDie_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallDie_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallDie_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallDie_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallDie_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallDie_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BigDie_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BigDie_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BigDie_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BigDie_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\BigDie_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiceRoll.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiceRollSuccess.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiceRollFailure.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CountrySelect.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CountrySelectError.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
