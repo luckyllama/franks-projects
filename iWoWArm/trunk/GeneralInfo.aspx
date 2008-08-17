@@ -103,48 +103,160 @@
     
     <li>
         <h3>
+            <a href="#Melee">Melee</a>
+            <span>+</span>
+        </h3>
+        <div class="collapse">
+        
+        <asp:Repeater ID="MeleeRepeater" runat="server">
+        <ItemTemplate>
+            <div class="DataBox DataRow">
+                <span class="Left"><%# DataBinder.Eval(Container, "DataItem.Key") %></span>
+                <span class="Right"><%# DataBinder.Eval(Container, "DataItem.Value") %></span>
+                <div class="cleaner"></div>
+            </div>
+        </ItemTemplate>
+        <AlternatingItemTemplate>
+            <div class="DataBox DataRow Alt">
+                <span class="Left"><%# DataBinder.Eval(Container, "DataItem.Key") %></span>
+                <span class="Right"><%# DataBinder.Eval(Container, "DataItem.Value") %></span>
+                <div class="cleaner"></div>
+            </div>
+        </AlternatingItemTemplate>
+        </asp:Repeater>
+            
+        </div>
+
+        <div class="BottomBox"></div>
+    </li>
+    
+    <% if (HasRanged) { %>
+    <li>
+        <h3>
+            <a href="#Ranged">Ranged</a>
+            <span>+</span>
+        </h3>
+        <div class="collapse">
+        
+        <asp:Repeater ID="RangedRepeater" runat="server">
+        <ItemTemplate>
+            <div class="DataBox DataRow">
+                <span class="Left"><%# DataBinder.Eval(Container, "DataItem.Key") %></span>
+                <span class="Right"><%# DataBinder.Eval(Container, "DataItem.Value") %></span>
+                <div class="cleaner"></div>
+            </div>
+        </ItemTemplate>
+        <AlternatingItemTemplate>
+            <div class="DataBox DataRow Alt">
+                <span class="Left"><%# DataBinder.Eval(Container, "DataItem.Key") %></span>
+                <span class="Right"><%# DataBinder.Eval(Container, "DataItem.Value") %></span>
+                <div class="cleaner"></div>
+            </div>
+        </AlternatingItemTemplate>
+        </asp:Repeater>
+        
+        </div>
+    
+        <div class="BottomBox"></div>
+    </li>
+    <% } %>
+    <% if (HasSpell) { %>
+    <li>
+        <h3>
+            <a href="#Spell">Spell</a>
+            <span>+</span>
+        </h3>
+        <div class="collapse">
+        
+        <asp:Repeater ID="SpellRepeater" runat="server">
+        <ItemTemplate>
+            <div class="DataBox DataRow">
+                <span class="Left"><%# DataBinder.Eval(Container, "DataItem.Key") %></span>
+                <span class="Right"><%# DataBinder.Eval(Container, "DataItem.Value") %></span>
+                <div class="cleaner"></div>
+            </div>
+        </ItemTemplate>
+        <AlternatingItemTemplate>
+            <div class="DataBox DataRow Alt">
+                <span class="Left"><%# DataBinder.Eval(Container, "DataItem.Key") %></span>
+                <span class="Right"><%# DataBinder.Eval(Container, "DataItem.Value") %></span>
+                <div class="cleaner"></div>
+            </div>
+        </AlternatingItemTemplate>
+        </asp:Repeater>
+            
+        </div>
+        
+        <div class="BottomBox"></div>
+    </li>
+    <% } %>
+    
+    <li>
+        <h3>
+            <a href="#Defenses">Defenses</a>
+            <span>+</span>
+        </h3>
+        <div class="collapse">
+        
+        <asp:Repeater ID="DefensesRepeater" runat="server">
+        <ItemTemplate>
+            <div class="DataBox DataRow">
+                <span class="Left"><%# DataBinder.Eval(Container, "DataItem.Key") %></span>
+                <span class="Right"><%# DataBinder.Eval(Container, "DataItem.Value") %></span>
+                <div class="cleaner"></div>
+            </div>
+        </ItemTemplate>
+        <AlternatingItemTemplate>
+            <div class="DataBox DataRow Alt">
+                <span class="Left"><%# DataBinder.Eval(Container, "DataItem.Key") %></span>
+                <span class="Right"><%# DataBinder.Eval(Container, "DataItem.Value") %></span>
+                <div class="cleaner"></div>
+            </div>
+        </AlternatingItemTemplate>
+        </asp:Repeater>
+            
+        </div>
+        
+        <div class="BottomBox"></div>
+    </li>
+    
+    <li>
+        <h3>
             <a href="#Resistances">Resistances</a>
             <span>+</span>
         </h3>
         <div class="collapse">
+        
+        <asp:Repeater ID="ResistancesRepeater" runat="server">
+        <ItemTemplate>
             <div class="DataBox DataRow">
-                <span class="Left">Arcane</span>
-                <span class="Right"><%= data.Resistances.Arcane %></span>
+                <span class="Left"><%# DataBinder.Eval(Container, "DataItem.Key") %></span>
+                <span class="Right"><%# DataBinder.Eval(Container, "DataItem.Value") %></span>
                 <div class="cleaner"></div>
             </div>
-                
+        </ItemTemplate>
+        <AlternatingItemTemplate>
             <div class="DataBox DataRow Alt">
-                <span class="Left">Fire</span>
-                <span class="Right"><%= data.Resistances.Fire %></span>
+                <span class="Left"><%# DataBinder.Eval(Container, "DataItem.Key") %></span>
+                <span class="Right"><%# DataBinder.Eval(Container, "DataItem.Value") %></span>
                 <div class="cleaner"></div>
             </div>
-                
-            <div class="DataBox DataRow">
-                <span class="Left">Frost</span>
-                <span class="Right"><%= data.Resistances.Frost %></span>
-                <div class="cleaner"></div>
-            </div>
-            
-            <div class="DataBox DataRow Alt">
-                <span class="Left">Holy</span>
-                <span class="Right"><%= data.Resistances.Holy %></span>
-                <div class="cleaner"></div>
-            </div>
-            
-            <div class="DataBox DataRow">
-                <span class="Left">Nature</span>
-                <span class="Right"><%= data.Resistances.Nature %></span>
-                <div class="cleaner"></div>
-            </div>
-            
-            <div class="DataBox DataRow Alt">
-                <span class="Left">Shadow</span>
-                <span class="Right"><%= data.Resistances.Shadow %></span>
-                <div class="cleaner"></div>
-            </div>
+        </AlternatingItemTemplate>
+        </asp:Repeater>
             
         </div>
         
+        <div class="BottomBox"></div>
+    </li>
+    
+    <li>
+        <h3>
+            <a href="#CacheDate">As of: <%= data.CacheDate.ToShortDateString() %></a>
+            <span>+</span>
+        </h3>
+        <div class="collapse">
+            TODO: Refresh Data
+        </div>
         <div class="BottomBox"></div>
     </li>
 </ul>
