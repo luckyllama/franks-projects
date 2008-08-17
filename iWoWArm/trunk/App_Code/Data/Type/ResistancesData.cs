@@ -3,17 +3,17 @@
     public class ResistancesData {
         public ResistancesData() {}
 
-        public string Arcane { get; set; }
+        public int Arcane { get; set; }
 
-        public string Fire { get; set; }
+        public int Fire { get; set; }
 
-        public string Frost { get; set; }
+        public int Frost { get; set; }
 
-        public string Holy { get; set; }
+        public int Holy { get; set; }
 
-        public string Nature { get; set; }
+        public int Nature { get; set; }
 
-        public string Shadow { get; set; }
+        public int Shadow { get; set; }
 
     }
 }
