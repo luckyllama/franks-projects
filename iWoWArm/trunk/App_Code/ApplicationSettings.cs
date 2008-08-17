@@ -9,9 +9,9 @@ namespace iWoWArm {
 
         private ApplicationSettings() { }
 
-        public static string CacheDirectoryPath {
+        public static string CharacterDataCacheDirectoryPath {
             get {
-                return ConfigurationManager.AppSettings["CacheFilePath"]; ;
+                return ConfigurationManager.AppSettings["CharacterDataCacheFilePath"]; ;
             }
         }
 

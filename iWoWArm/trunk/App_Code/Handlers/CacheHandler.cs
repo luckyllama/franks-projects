@@ -24,7 +24,7 @@ namespace iWoWArm.Handlers {
         }
 
         private static string getCacheDirectoryPath() {
-            return HttpRuntime.AppDomainAppPath + ApplicationSettings.CacheDirectoryPath;
+            return HttpRuntime.AppDomainAppPath + ApplicationSettings.CharacterDataCacheDirectoryPath;
         }
 
         public static void SaveCharacterDataXmlToCache(string realm, string name, string xml) {
