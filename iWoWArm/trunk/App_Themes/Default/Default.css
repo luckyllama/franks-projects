@@ -8,7 +8,7 @@ body {
 	margin: 0;
 	padding: 4px;
 	width: 320px;
-	font:normal 120% Arial, tahoma,verdana,"lucida grande","lucida sans unicode",sans-serif
+	font:normal 110% Arial, tahoma,verdana,"lucida grande","lucida sans unicode",sans-serif
 }
 
 h1{ font-size: 1.6em; }
@@ -153,6 +153,9 @@ a.SettingsButton {
     float: right;
 }
 
+/****** Text Modifiers ******/
+.MainStat { font-weight: bold; }
+
 /****** Class Colors ******/
 .Druid { color: #FF7D0A; }
 .Hunter { color: #ABD473; }
@@ -164,3 +167,11 @@ a.SettingsButton {
 .Warlock { color: #9482CA; }
 .Warrior { color: #C79C6E; }
 .DeathKnight { color: #C41F3B; }
+
+/****** Magic School Colors ******/
+.Arcane { color: #fff; }
+.Fire { color: #FF4F6F; }
+.Frost { color: #69CCF0; }
+.Holy { color: #F58CBA; }
+.Shadow { color: #9482CA; }
+.Nature { color: #ABD473; }

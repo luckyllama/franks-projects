@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/layout/character-sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
   <characterInfo>
-    <character battleGroup="Vindication" charUrl="r=Laughing+Skull&amp;n=Trauerfall" class="Warlock" classId="9" faction="Alliance" factionId="0" gender="Male" genderId="0" guildName="" lastModified="August 7, 2008" level="70" name="Trauerfall" prefix="" race="Gnome" raceId="7" realm="Laughing Skull" suffix="">
+    <character battleGroup="Vindication" 
+               charUrl="r=Laughing+Skull&amp;n=Trauerfall" 
+               class="Warlock" 
+               classId="9" 
+               faction="Alliance" 
+               factionId="0" 
+               gender="Male" 
+               genderId="0" 
+               guildName="" 
+               lastModified="August 7, 2008" 
+               level="70" 
+               name="Trauerfall" 
+               prefix="" race="Gnome" 
+               raceId="7" 
+               realm="Laughing Skull" 
+               suffix="">
       <arenaTeams>
         <arenaTeam battleGroup="Vindication" faction="Alliance" factionId="0" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Malaise" ranking="11702" rating="1518" realm="Laughing Skull" realmUrl="b=Vindication&amp;r=Laughing+Skull&amp;ts=2&amp;t=Malaise&amp;ff=realm&amp;fv=Laughing+Skull&amp;select=Malaise" seasonGamesPlayed="31" seasonGamesWon="16" size="2" url="r=Laughing+Skull&amp;ts=2&amp;t=Malaise&amp;select=Malaise">
           <emblem background="ff000000" borderColor="ff7e0700" borderStyle="2" iconColor="ff7a0200" iconStyle="70"/>
@@ -27,7 +42,10 @@
       </arenaTeams>
     </character>
     <characterTab>
-      <talentSpec treeOne="27" treeThree="0" treeTwo="34"/>
+      <talentSpec 
+        treeOne="27" 
+        treeThree="0" 
+        treeTwo="34"/>
       <buffs>
         <spell effect="Increases the amount of health generated through spells and effects by 20% and increases spell damage by up to 100." icon="spell_shadow_felarmour" name="Fel Armor"/>
       </buffs>
@@ -65,53 +83,144 @@
         <shadow petBonus="0" value="0"/>
       </resistances>
       <melee>
-        <mainHandDamage dps="43.8" max="118" min="23" percent="0" speed="1.60"/>
-        <offHandDamage dps="0.0" max="0" min="0" percent="0" speed="2.00"/>
-        <mainHandSpeed hastePercent="0.00" hasteRating="0" value="1.60"/>
-        <offHandSpeed hastePercent="0.00" hasteRating="0" value="2.00"/>
-        <power base="36" effective="36" increasedDps="2.0"/>
-        <hitRating increasedHitPercent="0.00" value="0"/>
-        <critChance percent="4.27" plusPercent="0.00" rating="0"/>
-        <expertise additional="0" percent="0.00" rating="0" value="0"/>
+        <mainHandDamage 
+          dps="43.8" 
+          max="118" 
+          min="23" 
+          percent="0" 
+          speed="1.60"/>
+        <offHandDamage 
+          dps="0.0" 
+          max="0" 
+          min="0" 
+          percent="0" 
+          speed="2.00"/>
+        <mainHandSpeed 
+          hastePercent="0.00" 
+          hasteRating="0" 
+          value="1.60"/>
+        <offHandSpeed 
+          hastePercent="0.00" 
+          hasteRating="0" 
+          value="2.00"/>
+        <power 
+          base="36" 
+          effective="36" 
+          increasedDps="2.0"/>
+        <hitRating 
+          increasedHitPercent="0.00" 
+          value="0"/>
+        <critChance 
+          percent="4.27" 
+          plusPercent="0.00" 
+          rating="0"/>
+        <expertise 
+          additional="0" 
+          percent="0.00" 
+          rating="0" 
+          value="0"/>
       </melee>
       <ranged>
-        <weaponSkill rating="0" value="350"/>
-        <damage dps="179.2" max="443" min="238" percent="0" speed="1.90"/>
-        <speed hastePercent="0.00" hasteRating="0" value="1.90"/>
-        <power base="51" effective="51" increasedDps="3.0" petAttack="-1.00" petSpell="-1.00"/>
-        <hitRating increasedHitPercent="0.25" value="4"/>
-        <critChance percent="4.47" plusPercent="0.00" rating="0"/>
+        <weaponSkill 
+          rating="0" 
+          value="350"/>
+        <damage 
+          dps="179.2"
+          max="443" 
+          min="238" 
+          percent="0" 
+          speed="1.90"/>
+        <speed 
+          hastePercent="0.00" 
+          hasteRating="0" 
+          value="1.90"/>
+        <power 
+          base="51" 
+          effective="51" 
+          increasedDps="3.0" 
+          petAttack="-1.00" 
+          petSpell="-1.00"/>
+        <hitRating 
+          increasedHitPercent="0.25" 
+          value="4"/>
+        <critChance 
+          percent="4.47" 
+          plusPercent="0.00" 
+          rating="0"/>
       </ranged>
       <spell>
         <bonusDamage>
-          <arcane value="926"/>
-          <fire value="926"/>
-          <frost value="926"/>
-          <holy value="926"/>
-          <nature value="926"/>
-          <shadow value="926"/>
-          <petBonus attack="528" damage="139" fromType="fire"/>
+          <arcane 
+            value="926"/>
+          <fire 
+            value="926"/>
+          <frost 
+            value="926"/>
+          <holy 
+            value="926"/>
+          <nature 
+            value="926"/>
+          <shadow 
+            value="926"/>
+          <petBonus 
+            attack="528" 
+            damage="139" 
+            fromType="fire"/>
         </bonusDamage>
-        <bonusHealing value="796"/>
-        <hitRating increasedHitPercent="4.84" value="61"/>
-        <critChance rating="77">
-          <arcane percent="11.10"/>
-          <fire percent="11.10"/>
-          <frost percent="11.10"/>
-          <holy percent="11.10"/>
-          <nature percent="11.10"/>
-          <shadow percent="11.10"/>
+        <bonusHealing 
+          value="796"/>
+        <hitRating 
+          increasedHitPercent="4.84" 
+          value="61"/>
+        <critChance 
+          rating="77">
+          <arcane 
+            percent="11.10"/>
+          <fire 
+            percent="11.10"/>
+          <frost 
+            percent="11.10"/>
+          <holy 
+            percent="11.10"/>
+          <nature 
+            percent="11.10"/>
+          <shadow 
+            percent="11.10"/>
         </critChance>
-        <penetration value="0"/>
-        <manaRegen casting="0.00" notCasting="135.00"/>
+        <penetration 
+          value="0"/>
+        <manaRegen 
+          casting="0.00" 
+          notCasting="135.00"/>
       </spell>
       <defenses>
-        <armor base="2566" effective="2566" percent="19.55" petBonus="898"/>
-        <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="350.00"/>
-        <dodge increasePercent="0.00" percent="4.47" rating="0"/>
-        <parry increasePercent="0.00" percent="0.00" rating="0"/>
-        <block increasePercent="0.00" percent="0.00" rating="0"/>
-        <resilience damagePercent="17.25" hitPercent="8.62" value="340.00"/>
+        <armor 
+          base="2566" 
+          effective="2566" 
+          percent="19.55" 
+          petBonus="898"/>
+        <defense 
+          decreasePercent="0.00" 
+          increasePercent="0.00" 
+          plusDefense="0" 
+          rating="0" 
+          value="350.00"/>
+        <dodge 
+          increasePercent="0.00" 
+          percent="4.47" 
+          rating="0"/>
+        <parry 
+          increasePercent="0.00" 
+          percent="0.00" 
+          rating="0"/>
+        <block 
+          increasePercent="0.00" 
+          percent="0.00" 
+          rating="0"/>
+        <resilience 
+          damagePercent="17.25" 
+          hitPercent="8.62" 
+          value="340.00"/>
       </defenses>
       <items>
         <item durability="36" gem0Id="25896" gem1Id="24033" gem2Id="0" icon="inv_helmet_103" id="33677" maxDurability="60" permanentenchant="3004" randomPropertiesId="0" seed="0" slot="0"/>
