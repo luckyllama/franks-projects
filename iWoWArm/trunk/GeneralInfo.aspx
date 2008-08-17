@@ -61,41 +61,24 @@
             <span>+</span>
         </h3>
         <div class="collapse">
+        
+        <asp:Repeater ID="BaseStatsRepeater" runat="server">
+        <ItemTemplate>
             <div class="DataBox DataRow">
-                <span class="Left">Strength</span>
-                <span class="Right"><%= data.BaseStats.Strength %></span>
+                <span class="Left"><%# DataBinder.Eval(Container, "DataItem.Key") %></span>
+                <span class="Right"><%# DataBinder.Eval(Container, "DataItem.Value") %></span>
                 <div class="cleaner"></div>
             </div>
-            
+        </ItemTemplate>
+        <AlternatingItemTemplate>
             <div class="DataBox DataRow Alt">
-                <span class="Left">Agility</span>
-                <span class="Right"><%= data.BaseStats.Agility %></span>
+                <span class="Left"><%# DataBinder.Eval(Container, "DataItem.Key") %></span>
+                <span class="Right"><%# DataBinder.Eval(Container, "DataItem.Value") %></span>
                 <div class="cleaner"></div>
             </div>
-            
-            <div class="DataBox DataRow">
-                <span class="Left">Stamina</span>
-                <span class="Right"><%= data.BaseStats.Stamina %></span>
-                <div class="cleaner"></div>
-            </div>
-            
-            <div class="DataBox DataRow Alt">
-                <span class="Left">Intellect</span>
-                <span class="Right"><%= data.BaseStats.Intellect %></span>
-                <div class="cleaner"></div>
-            </div>
-            
-            <div class="DataBox DataRow">
-                <span class="Left">Spirit</span>
-                <span class="Right"><%= data.BaseStats.Spirit %></span>
-                <div class="cleaner"></div>
-            </div>            
-            
-            <div class="DataBox DataRow Alt">
-                <span class="Left">Armor</span>
-                <span class="Right"><%= data.BaseStats.Armor %></span>
-                <div class="cleaner"></div>
-            </div>
+        </AlternatingItemTemplate>
+        </asp:Repeater>
+        
         </div>
         
         <div class="BottomBox"></div>

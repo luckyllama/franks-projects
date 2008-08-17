@@ -97,23 +97,23 @@ namespace iWoWArm.Data {
         private void getBaseStats(XElement characterTab) {
             XElement baseStats = characterTab.Element("baseStats");
 
-            BaseStats.StrengthBase = baseStats.Element("strength").Attribute("base").Value;
-            BaseStats.Strength = baseStats.Element("strength").Attribute("effective").Value;
+            BaseStats.StrengthBase = Convert.ToInt32(baseStats.Element("strength").Attribute("base").Value);
+            BaseStats.Strength = Convert.ToInt32(baseStats.Element("strength").Attribute("effective").Value);
 
-            BaseStats.AgilityBase = baseStats.Element("agility").Attribute("base").Value;
-            BaseStats.Agility = baseStats.Element("agility").Attribute("effective").Value;
+            BaseStats.AgilityBase = Convert.ToInt32(baseStats.Element("agility").Attribute("base").Value);
+            BaseStats.Agility = Convert.ToInt32(baseStats.Element("agility").Attribute("effective").Value);
 
-            BaseStats.StaminaBase = baseStats.Element("stamina").Attribute("base").Value;
-            BaseStats.Stamina = baseStats.Element("stamina").Attribute("effective").Value;
+            BaseStats.StaminaBase = Convert.ToInt32(baseStats.Element("stamina").Attribute("base").Value);
+            BaseStats.Stamina = Convert.ToInt32(baseStats.Element("stamina").Attribute("effective").Value);
 
-            BaseStats.IntellectBase = baseStats.Element("intellect").Attribute("base").Value;
-            BaseStats.Intellect = baseStats.Element("intellect").Attribute("effective").Value;
+            BaseStats.IntellectBase = Convert.ToInt32(baseStats.Element("intellect").Attribute("base").Value);
+            BaseStats.Intellect = Convert.ToInt32(baseStats.Element("intellect").Attribute("effective").Value);
 
-            BaseStats.SpiritBase = baseStats.Element("spirit").Attribute("base").Value;
-            BaseStats.Spirit = baseStats.Element("spirit").Attribute("effective").Value;
+            BaseStats.SpiritBase = Convert.ToInt32(baseStats.Element("spirit").Attribute("base").Value);
+            BaseStats.Spirit = Convert.ToInt32(baseStats.Element("spirit").Attribute("effective").Value);
 
-            BaseStats.ArmorBase = baseStats.Element("armor").Attribute("base").Value;
-            BaseStats.Armor = baseStats.Element("armor").Attribute("effective").Value;
+            BaseStats.ArmorBase = Convert.ToInt32(baseStats.Element("armor").Attribute("base").Value);
+            BaseStats.Armor = Convert.ToInt32(baseStats.Element("armor").Attribute("effective").Value);
         }
 
         private void getMeleeStats(XElement characterTab) {
@@ -192,8 +192,27 @@ namespace iWoWArm.Data {
         }
 
         private void getDefenses(XElement characterTab) {
-            XElement resistances = characterTab.Element("defenses");
+            XElement stats = characterTab.Element("defenses");
 
+            Defense.ArmorEffective = Convert.ToInt32(stats.Element("armor").Attribute("effective").Value);
+            Defense.ArmorPercent = Convert.ToDouble(stats.Element("armor").Attribute("percent").Value);
+
+            Defense.Defense = Convert.ToDouble(stats.Element("defense").Attribute("value").Value);
+            Defense.DefenseIncreasePercent = Convert.ToDouble(stats.Element("defense").Attribute("increasePercent").Value);
+            Defense.DefenseDecreasePercent = Convert.ToDouble(stats.Element("defense").Attribute("decreasePercent").Value);
+
+            Defense.DodgeRating = Convert.ToInt32(stats.Element("dodge").Attribute("rating").Value);
+            Defense.DodgePercent = Convert.ToDouble(stats.Element("dodge").Attribute("percent").Value);
+
+            Defense.DodgePercent = Convert.ToInt32(stats.Element("parry").Attribute("rating").Value);
+            Defense.ParryPercent = Convert.ToDouble(stats.Element("parry").Attribute("percent").Value);
+
+            Defense.BlockRating = Convert.ToInt32(stats.Element("block").Attribute("rating").Value);
+            Defense.BlockPercent = Convert.ToDouble(stats.Element("block").Attribute("percent").Value);
+
+            Defense.ResilienceRating = Convert.ToDouble(stats.Element("resilience").Attribute("value").Value);
+            Defense.ResilienceDamagePercent = Convert.ToDouble(stats.Element("resilience").Attribute("damagePercent").Value);
+            Defense.ResilienceHitPercent = Convert.ToDouble(stats.Element("resilience").Attribute("hitPercent").Value);
         }
 
         private void getResistances(XElement characterTab) {
@@ -244,6 +263,7 @@ namespace iWoWArm.Data {
         public MeleeData Melee = new MeleeData();
         public RangedData Ranged = new RangedData();
         public SpellData Spell = new SpellData();
+        public DefensesData Defense = new DefensesData();
 
         public ResistancesData Resistances = new ResistancesData();
 

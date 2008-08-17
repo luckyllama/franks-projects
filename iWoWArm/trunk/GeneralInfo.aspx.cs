@@ -18,6 +18,7 @@ public partial class GeneralInfo : System.Web.UI.Page {
 
         this.data = data;
 
+        dataBindBaseStatsRepeater();
         dataBindMeleeRepeater();
         dataBindRangedRepeater();
         dataBindSpellRepeater();
@@ -25,7 +26,46 @@ public partial class GeneralInfo : System.Web.UI.Page {
         dataBindResistancesRepeater();
     }
 
-    #region Melee Repeater 
+    #region Base Stats Repeater
+
+    private void dataBindBaseStatsRepeater() {
+        Dictionary<string, string> baseStatsData = getBaseStatsRepeaterData();
+
+        BaseStatsRepeater.DataSource = baseStatsData;
+        BaseStatsRepeater.DataBind();
+    }
+
+    private Dictionary<string, string> getBaseStatsRepeaterData() {
+        Dictionary<string, string> baseStatsData = new Dictionary<string, string>();
+
+        baseStatsData.Add("Strength",
+            rapMainStatInHtml(data.BaseStats.Strength.ToString()) + " (" + data.BaseStats.StrengthBase + " + " +
+            (data.BaseStats.Strength - data.BaseStats.StrengthBase) + ")");
+
+        baseStatsData.Add("Agility",
+            rapMainStatInHtml(data.BaseStats.Agility.ToString()) + " (" + data.BaseStats.AgilityBase + " + " +
+            (data.BaseStats.Agility - data.BaseStats.AgilityBase) + ")");
+
+        baseStatsData.Add("Stamina",
+            rapMainStatInHtml(data.BaseStats.Stamina.ToString()) + " (" + data.BaseStats.StaminaBase + " + " +
+            (data.BaseStats.Stamina - data.BaseStats.StaminaBase) + ")");
+
+        baseStatsData.Add("Intellect",
+            rapMainStatInHtml(data.BaseStats.Intellect.ToString()) + " (" + data.BaseStats.IntellectBase + " + " +
+            (data.BaseStats.Intellect - data.BaseStats.IntellectBase) + ")");
+
+        baseStatsData.Add("Spirit",
+            rapMainStatInHtml(data.BaseStats.Spirit.ToString()) + " (" + data.BaseStats.SpiritBase + " + " +
+            (data.BaseStats.Spirit - data.BaseStats.SpiritBase) + ")");
+
+        baseStatsData.Add("Armor", data.BaseStats.Armor.ToString());
+
+        return baseStatsData;
+    }
+
+    #endregion Base Stats Repeater
+
+    #region Melee Repeater
 
     private void dataBindMeleeRepeater() {
         Dictionary<string, string> meleeData = getMeleeRepeaterData();
@@ -209,6 +249,25 @@ public partial class GeneralInfo : System.Web.UI.Page {
     private Dictionary<string, string> getDefensesRepeaterData() {
         Dictionary<string, string> defensesData = new Dictionary<string, string>();
 
+        defensesData.Add("Armor",
+            rapMainStatInHtml(data.Defense.ArmorEffective.ToString()) + " (" + data.Defense.ArmorPercent + "%)");
+
+        defensesData.Add("Defense",
+            rapMainStatInHtml(data.Defense.Defense.ToString()) + " (-" + data.Defense.DefenseDecreasePercent + "% / +" 
+            + data.Defense.DefenseIncreasePercent + "%)");
+
+        defensesData.Add("Dodge",
+            data.Defense.DodgeRating + " (" + rapMainStatInHtml(data.Defense.DodgePercent + "%") + ")");
+
+        defensesData.Add("Parry",
+            data.Defense.ParryRating + " (" + rapMainStatInHtml(data.Defense.ParryPercent + "%") + ")");
+
+        defensesData.Add("Block",
+            data.Defense.BlockRating + " (" + rapMainStatInHtml(data.Defense.BlockPercent + "%") + ")");
+
+        defensesData.Add("Resilience",
+            rapMainStatInHtml(data.Defense.ResilienceRating.ToString()) + " (" + data.Defense.ResilienceHitPercent
+            + "% / " + data.Defense.ResilienceDamagePercent + "%)");
 
         return defensesData;
     }
