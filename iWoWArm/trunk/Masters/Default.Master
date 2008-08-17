@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.Master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>iWoW Armory - Beta</title>
+    <meta name = "viewport" content = "width = device-width, user-scalable = no" />
+    <script type="text/javascript" language="javascript" src="js/mootools.js"></script>
+    <script type="text/javascript" language="javascript" src="js/functions.js"></script>
+</head>
+<body>
+
+<div id="Page">
+	<div id="TopContent">
+		iWoW Armory
+	</div>
+	<div id="MainContent">
+	
+    <div>
+        <asp:contentplaceholder id="MainContentPlaceHolder" runat="server">
+        
+        </asp:contentplaceholder>
+    </div>
+    
+	</div>
+
+	<div id="BottomContent">
+		<a href="/Default.aspx" class="BackButton"><span>Change Characters</span></a>
+		
+		<a href="/Settings.aspx" class="SettingsButton"><span>Settings</span></a>
+	</div>
+</div>
+
+</body>
+</html>

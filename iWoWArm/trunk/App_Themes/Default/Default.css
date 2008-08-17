@@ -1,0 +1,166 @@
+﻿html {
+	margin: 0;
+	padding: 0;	
+}
+body {
+	color: #E2FFDF;
+	background-color: #252A2E;
+	margin: 0;
+	padding: 4px;
+	width: 320px;
+	font:normal 120% Arial, tahoma,verdana,"lucida grande","lucida sans unicode",sans-serif
+}
+
+h1{ font-size: 1.6em; }
+h2{ font-size: 1.4em; }
+h3{ font-size: 1.2em; }
+h4{ font-size: 1.1em; }
+p{ font-size: 1.1em; }
+
+a, a:visited { color: #9EBB8A; outline: invert; text-decoration: none; }
+a img, img a {border: none; text-decoration: none;}
+a:hover { text-decoration: underline; }
+div#MainContent h3 span { color: #9EBB8A; }
+
+ul, ul li{ list-style: none outside; padding: 0; margin: 0;}
+
+div.cleaner { clear: both; }
+
+/* =layout
+-------------------------------------------*/
+div#MainContent {
+
+}
+    div#MainContent ul#GeneralInfoSections li, div.Box {
+        background: url(images/TopBox.png) top center no-repeat; 
+    }
+    div#MainContent li, div.Box {
+        width: 319px;
+        padding: 12px 0 0;
+        margin: 4px 0;
+    }
+    div#MainContent div.BottomBox {
+        background: url(images/BottomBox.png) bottom center no-repeat;
+        height: 12px;
+        padding: 0;
+        position: relative;
+        bottom: 0;
+        clear: both;
+    }
+	div#MainContent h3, div.BoxTitle { 
+	    padding: 0 10px;
+	    margin: 0;
+	    position: relative; 
+	    cursor: pointer;
+	}
+	div#MainContent h3 a { text-decoration: none; }	
+	div#MainContent h3 img { 
+		border: 1px solid black;
+		margin-right: 6px;
+		float: left; 
+	}
+	div#MainContent h3 span { 
+	    position: absolute; 
+	    top: 0; 
+	    right: 15px;  
+	    font-size: 1.1em; 
+	    font-weight: bold;
+	}
+	
+    div.collapse { 
+    	clear: both;
+        margin: 0; 
+        padding: 10px 0 0; 
+    }
+
+
+div#TopContent {
+	height: 50px;
+    background: #39482F;
+    text-align: center;
+}
+
+div#TopContent {
+	top: 0;
+	left: 0;
+}
+
+div#BottomContent {
+    bottom: 0;
+	left: 0;
+}
+
+
+.DataBox {
+	margin: 0 15px;
+}
+.DataRow {
+	padding: 2px 4px;
+}
+.Alt {
+	background-color: #4A4B4F;
+}
+.TalentPoints, .Left {
+    float: left;
+}
+.TalentSpec, .Right {
+    float: right;
+}
+
+div.HealthBarBox, div.PowerBarBox {
+    border: solid 1px black;
+    padding: 2px 0;
+    text-align: center;
+    margin: 0 0 5px 5%;
+    width: 90%;
+}
+
+div.HealthBarBox {
+    background-color: #257E01;
+}
+
+    div.m {
+        background-color: #316CB3;
+    }
+    div.e {
+        background-color: #9D9900;
+    }
+    div.r {
+        background-color: #9D0900;
+    }
+
+/****** Bottom Buttons *******/
+a.BackButton,
+a.SettingsButton {
+    width: 60px;
+    height: 61px;
+    display: block;
+    margin: 5px;
+}
+
+a.BackButton span,
+a.SettingsButton span {
+    display: none;
+}
+
+a.BackButton {
+    background: url(images/BackButton.png) top left no-repeat;
+    float: left;
+}
+
+a.SettingsButton {
+    background: url(images/SettingsButton.png) top left no-repeat;
+    float: right;
+}
+
+/****** Class Colors ******/
+.Druid { color: #FF7D0A; }
+.Hunter { color: #ABD473; }
+.Mage { color: #69CCF0; }
+.Paladin { color: #F58CBA; }
+.Priest { color: #fff; }
+.Rogue { color: #FFF569; }
+.Shaman { color: #2459FF; }
+.Warlock { color: #9482CA; }
+.Warrior { color: #C79C6E; }
+.DeathKnight { color: #C41F3B; }

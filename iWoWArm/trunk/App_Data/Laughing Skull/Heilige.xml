@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/layout/character-sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <characterInfo>
+    <character battleGroup="Vindication" charUrl="r=Laughing+Skull&amp;n=Heilige" class="Paladin" classId="2" faction="Alliance" factionId="0" gender="Male" genderId="0" guildName="Was Here" guildUrl="r=Laughing+Skull&amp;n=Was+Here&amp;p=1" lastModified="August 14, 2008" level="67" name="Heilige" prefix="" race="Draenei" raceId="11" realm="Laughing Skull" suffix=""/>
+    <characterTab>
+      <talentSpec treeOne="0" treeThree="10" treeTwo="45"/>
+      <buffs>
+        <spell effect="Mounted speed increased by 20%.  This does not stack with other movement speed increasing effects." icon="spell_holy_crusaderaura" name="Crusader Aura"/>
+      </buffs>
+      <debuffs/>
+      <pvp>
+        <lifetimehonorablekills value="66"/>
+        <arenacurrency value="0"/>
+      </pvp>
+      <professions>
+        <skill key="alchemy" max="375" name="Alchemy" value="375"/>
+        <skill key="skinning" max="375" name="Skinning" value="361"/>
+      </professions>
+      <title value=""/>
+      <knownTitles/>
+      <characterBars>
+        <health effective="9129"/>
+        <secondBar casting="11" effective="4626" notCasting="63" type="m"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="612" base="121" block="15" effective="316"/>
+        <agility armor="222" attack="-1" base="70" critHitPercent="5.37" effective="111"/>
+        <stamina base="131" effective="663" health="6450" petBonus="-1"/>
+        <intellect base="80" critHitPercent="5.45" effective="159" mana="2105" petBonus="-1"/>
+        <spirit base="87" effective="87" healthRegen="17" manaRegen="52"/>
+        <armor base="9569" effective="9569" percent="51.11" petBonus="-1"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="-1" value="0"/>
+        <fire petBonus="-1" value="0"/>
+        <frost petBonus="-1" value="0"/>
+        <holy petBonus="-1" value="0"/>
+        <nature petBonus="-1" value="0"/>
+        <shadow petBonus="-1" value="10"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="104.6" max="204" min="152" percent="0" speed="1.70"/>
+        <offHandDamage dps="0.0" max="0" min="0" percent="0" speed="2.00"/>
+        <mainHandSpeed hastePercent="0.00" hasteRating="0" value="1.70"/>
+        <offHandSpeed hastePercent="0.00" hasteRating="0" value="2.00"/>
+        <power base="813" effective="843" increasedDps="60.0"/>
+        <hitRating increasedHitPercent="0.00" value="0"/>
+        <critChance percent="5.33" plusPercent="0.00" rating="0"/>
+        <expertise additional="0" percent="1.25" rating="0" value="5"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="-1"/>
+        <damage dps="0.0" max="0" min="0" percent="0" speed="0.00"/>
+        <speed hastePercent="0.00" hasteRating="0" value="0.00"/>
+        <power base="101" effective="131" increasedDps="9.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="0.00" value="0"/>
+        <critChance percent="0.81" plusPercent="0.00" rating="0"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="64"/>
+          <fire value="64"/>
+          <frost value="64"/>
+          <holy value="64"/>
+          <nature value="64"/>
+          <shadow value="64"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="101"/>
+        <hitRating increasedHitPercent="0.00" value="0"/>
+        <critChance rating="26">
+          <arcane percent="6.83"/>
+          <fire percent="6.83"/>
+          <frost percent="6.83"/>
+          <holy percent="6.83"/>
+          <nature percent="6.83"/>
+          <shadow percent="6.83"/>
+        </critChance>
+        <penetration value="0"/>
+        <manaRegen casting="11.00" notCasting="63.00"/>
+      </spell>
+      <defenses>
+        <armor base="9569" effective="9569" percent="51.11" petBonus="-1"/>
+        <defense decreasePercent="2.44" increasePercent="2.44" plusDefense="41" rating="83" value="355.00"/>
+        <dodge increasePercent="0.00" percent="7.81" rating="0"/>
+        <parry increasePercent="0.89" percent="13.33" rating="18"/>
+        <block increasePercent="0.00" percent="7.44" rating="0"/>
+        <resilience damagePercent="0.00" hitPercent="0.00" value="0.00"/>
+      </defenses>
+      <items>
+        <item durability="70" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_helmet_10" id="25530" maxDurability="70" permanentenchant="2841" randomPropertiesId="0" seed="714192020" slot="0"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_gem_diamond_01" id="25062" maxDurability="0" permanentenchant="0" randomPropertiesId="-5" seed="483721240" slot="1"/>
+        <item durability="80" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shoulder_01" id="29316" maxDurability="80" permanentenchant="2841" randomPropertiesId="0" seed="2027638490" slot="2"/>
+        <item durability="115" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_chest_plate16" id="24960" maxDurability="115" permanentenchant="1950" randomPropertiesId="-45" seed="439943212" slot="4"/>
+        <item durability="40" gem0Id="23118" gem1Id="23118" gem2Id="0" icon="inv_belt_32" id="25922" maxDurability="40" permanentenchant="0" randomPropertiesId="0" seed="370428696" slot="5"/>
+        <item durability="85" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_pants_04" id="25979" maxDurability="85" permanentenchant="3011" randomPropertiesId="0" seed="1650263368" slot="6"/>
+        <item durability="65" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_boots_plate_02" id="27420" maxDurability="65" permanentenchant="2841" randomPropertiesId="0" seed="1005035148" slot="7"/>
+        <item durability="40" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_09" id="24989" maxDurability="40" permanentenchant="0" randomPropertiesId="-7" seed="0" slot="8"/>
+        <item durability="45" gem0Id="23118" gem1Id="23118" gem2Id="0" icon="inv_gauntlets_30" id="25942" maxDurability="45" permanentenchant="0" randomPropertiesId="0" seed="849139288" slot="9"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_09" id="25047" maxDurability="0" permanentenchant="0" randomPropertiesId="-45" seed="1868496919" slot="10"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_35" id="25052" maxDurability="0" permanentenchant="0" randomPropertiesId="-6" seed="1195507739" slot="11"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_datacrystal06" id="28040" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="492272736" slot="12"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_28" id="25619" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="812099140" slot="13"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_20" id="25540" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="354141309" slot="14"/>
+        <item durability="75" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_hammer_06" id="25314" maxDurability="75" permanentenchant="0" randomPropertiesId="-16" seed="0" slot="15"/>
+        <item durability="100" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shield_21" id="25828" maxDurability="100" permanentenchant="0" randomPropertiesId="0" seed="0" slot="16"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_book_13" id="24386" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="1905106877" slot="17"/>
+      </items>
+    </characterTab>
+  </characterInfo>
+</page>
+
