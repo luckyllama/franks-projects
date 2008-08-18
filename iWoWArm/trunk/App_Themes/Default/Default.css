@@ -90,6 +90,32 @@ div#BottomContent {
 	left: 0;
 }
 
+/****** Forms *******/
+.FormItem, .FormOption, .FormSubmit { 
+	padding: 4px 15px; 
+}
+.FormItem label {
+	display: block;
+	float: left;
+	width: 80px;	
+}
+.FormItem input {
+	border: 1px solid #000;
+	font-size: 105%;
+	width: 90%;
+}
+.FormSubmit {
+	float: right;	
+}
+
+.DeleteIcon {
+	background: url(images/DeleteIcon.png) top left no-repeat;
+	width: 29px;
+	height: 29px;
+	display: block;
+}
+
+/****** Character Display *******/
 
 .DataBox {
 	margin: 0 15px;

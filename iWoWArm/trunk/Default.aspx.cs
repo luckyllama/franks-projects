@@ -12,19 +12,38 @@ public partial class _Default : System.Web.UI.Page {
             ErrorDisplay.Text = "Couldn't Find Character";
         }
 
-        displayFavoriteCharacters();
+        dataBindFavoriteCharacters();
     }
 
-    private void displayFavoriteCharacters() {
+    #region Data Bind Favorites Characters
+
+    private void dataBindFavoriteCharacters() {
         IDictionary<string, string> favorites = FavoritesHandler.GetFavorites();
 
+        Dictionary<string, string> repeaterData = getFavoritesRepeaterData(favorites);
+
+        FavoritesRepeater.DataSource = repeaterData;
+        FavoritesRepeater.DataBind();
+
+    }
+
+    private Dictionary<string, string> getFavoritesRepeaterData(IDictionary<string, string> favorites) {
+        Dictionary<string, string> repeaterData = new Dictionary<string, string>();
+
         if (favorites.Count == 0) {
-            FavoritesDisplay.Text = "<li>No Favorites</li>";
+            repeaterData.Add("No Favorites", "");
         } else {
             foreach (string key in favorites.Keys) {
-                FavoritesDisplay.Text += "<li><a href=\"GeneralInfo.aspx?" + favorites[key] + "\">" + key + "</a></li>";
+                repeaterData.Add(rapTextInFavoritesLink(favorites[key], key), "<a href=\"#\" class=\"DeleteIcon\"></a>");
             }
         }
 
+        return repeaterData;
     }
+
+    private string rapTextInFavoritesLink(string queryString, string linkText) {
+        return "<a href=\"GeneralInfo.aspx?" + queryString + "\">" + linkText + "</a>";
+    }
+
+    #endregion Data Bind Favorites Characters
 }
