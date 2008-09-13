@@ -1,192 +1,305 @@
-﻿/*----------------------------------------------------------
-The base color for this template is #5c87b2. If you'd like
-to use a different color start by replacing all instances of
-#5c87b2 with your new color.
-----------------------------------------------------------*/
-body
-{
-    background-color: #5c87b2;
-    font-size: .75em;
-    font-family: Verdana, Helvetica, Sans-Serif;
-    margin: 0;
-    padding: 0;
-    color: #696969;
+﻿/***********************************************************\
+ * Rest Css
+\***********************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
 }
 
-a:link
-{
-    color: #034af3;
-    text-decoration: underline;
-}
-a:visited
-{
-    color: #505abc;
-}
-a:hover
-{
-    color: #1d60ff;
-    text-decoration: none;
-}
-a:active
-{
-    color: #12eb87;
+/***********************************************************\
+ * Rest Css
+\***********************************************************/
+
+body {
+	color: #fff;
+	background-color: #111;
+	padding: 4px;
+	width: 320px;
+	font: normal 100% Arial, tahoma,verdana,"lucida grande","lucida sans unicode",sans-serif
 }
 
-p, ul
-{
-    margin-bottom: 20px;
-    line-height: 1.6em;
-}
+h1{ font-size: 1.6em; }
+h2{ font-size: 1.4em; }
+h3{ font-size: 1.2em; }
+h4{ font-size: 1.1em; }
+p{ font-size: 1.1em; }
 
-/* HEADINGS   
-----------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6
-{
-    font-size: 1.5em;
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
-}
+a, a:visited { color: #fff; outline: invert; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a img, img a {border: none; text-decoration: none;}
 
-h1
-{
-    font-size: 2em;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-h2
-{
-    padding: 0 0 10px 0;
-}
-h3
-{
-    font-size: 1.2em;
-}
-h4
-{
-    font-size: 1.1em;
-}
-h5, h6
-{
-    font-size: 1em;
-}
+/***********************************************************\
+ * Layout
+\***********************************************************/
+div#MainContent {
 
-/* this rule styles <h2> tags that are the 
-first child of the left and right table columns */
-.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
-{
-    margin-top: 0;
 }
+    div#MainContent ul#GeneralInfoSections li, div.Box {
+        background: url(images/TopBox.png) top center no-repeat; 
+    }
+    div#MainContent li, div.Box {
+        width: 319px;
+        padding: 12px 0 0;
+        margin: 4px 0;
+    }
+    div#MainContent div.BottomBox {
+        background: url(images/BottomBox.png) bottom center no-repeat;
+        height: 12px;
+        padding: 0;
+        position: relative;
+        bottom: 0;
+        clear: both;
+    }
+	div#MainContent h3, div.BoxTitle { 
+	    padding: 0 10px;
+	    margin: 0;
+	    position: relative; 
+	    cursor: pointer;
+	}
+	div#MainContent h3 a { text-decoration: none; }	
+	div#MainContent h3 img { 
+		border: 1px solid black;
+		margin-right: 6px;
+		float: left; 
+	}
+	div#MainContent h3 span { 
+	    position: absolute; 
+	    top: 0; 
+	    right: 15px;  
+	    font-size: 1.1em; 
+	    font-weight: bold;
+	}
+	
+    div.collapse { 
+    	clear: both;
+        margin: 0; 
+        padding: 10px 0 0; 
+    }
 
-/* PRIMARY LAYOUT ELEMENTS   
-----------------------------------------------------------*/
 
-/* you can specify a greater or lesser percentage for the 
-page width. Or, you can specify an exact pixel width. */
-.page
-{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#header
-{
-    position: relative;
-    margin-bottom: 0px;
-    color: #000;
-    padding: 0 0px 0 0;
-}
-
-p#logo, h1#logo
-{
-    font-weight: bold;
-    font-size: 24px !important;
-    padding: 10px 0;
-    margin: 0;
-    color: #FFF;
-    border: none;
-    line-height: 2em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#logo a
-{
-    color: #FFF;
-    text-decoration: none;
-    font-size: 32px !important;
-}
-
-#main
-{
-    padding: 30px 30px 15px 30px;
-    background-color: #FFF;
-    margin-bottom: 30px;
-    _height: 1px; /* only IE6 applies CSS properties starting with an underscrore */
-}
-
-#footer
-{
-    color: #999;
-    padding: 5px 0 0 0;
+div#TopContent {
+	height: 50px;
+    background: #39482F;
     text-align: center;
-    line-height: normal;
 }
 
-#footer p
-{
-    padding: 5px 0;
-    margin: 0;
-    font-size: .9em;
+div#TopContent {
+	top: 0;
+	left: 0;
 }
 
-/* TAB MENU   
-----------------------------------------------------------*/
-ul#menu
-{
-    border-bottom: 1px #5C87B2 solid;
-    padding: 0 0 2px;
-    position: relative;
-    margin: 0;
-    text-align: right;
+div#BottomContent {
+    bottom: 0;
+	left: 0;
 }
 
-ul#menu li
-{
-    display: inline;
-    list-style: none;
+/***********************************************************\
+ * Forms
+\***********************************************************/
+
+.FormItem, .FormOption, .FormSubmit { 
+	padding: 4px 15px; 
+}
+.FormItem label {
+	display: block;
+	float: left;
+	width: 80px;	
+}
+.FormItem input {
+	border: 1px solid #000;
+	font-size: 105%;
+	width: 90%;
+}
+dl#CharacterLookupForm .FormSubmit {
+	display: none;
 }
 
-ul#menu li a
-{
-    padding: 10px 20px;
-    font-weight: bold;
-    text-decoration: none;
-    line-height: 2.8em;
-    background-color: #e8eef4;
-    color: #034af3;
+/***********************************************************\
+ * Page Specific Rules
+\***********************************************************/
+dl#FavoritesSection div.FavoriteRow {
+		padding: 5px 4px;
+}
+dl dt {
+	clear: both;
+	padding: 0 4px;
+	margin: 8px 0;
+}
+dl dt.Header {
+	background: url(Images/Header.png) repeat-x;
+	border: 1px solid #999;
+	line-height: 40px;
+	height: 40px;
+}
+dl dt.Active {
+	background: url(Images/Header-Active.png) repeat-x;
+}
+	dl dt a {
+		display: block;
+		width: 100%;
+	}
+	dl dt.Active a {
+		color: #333;
+	}
+	dl dt a span {
+		float: right;
+	}
+	dl dt img { 
+		border: solid 1px black;
+		float: left;
+		margin-right: 6px;
+	}
+
+dl dd {
+	clear: both;	
+	padding: 4px 10px;
 }
 
-ul#menu li a:hover
-{
-    background-color: #FFF;
-    text-decoration: none;
+dl dd div {
+	padding: 2px 4px;
+}
+div.Alt {
+	background-color: #4A4B4F;
+}
+.TalentPoints, .Left {
+    float: left;
+}
+.TalentSpec, .Right {
+    float: right;
 }
 
-ul#menu li a:active
-{
-    background-color: #a6e2a6;
-    text-decoration: none;
+div.HealthBarBox, div.PowerBarBox {
+    border: solid 1px black;
+    padding: 2px 0;
+    text-align: center;
+    margin: 0 0 5px 5%;
+    width: 90%;
+}
+div.HealthBarBox {
+    background-color: #257E01;
+}
+    div.m {
+        background-color: #316CB3;
+    }
+    div.e {
+        background-color: #9D9900;
+    }
+    div.r {
+        background-color: #9D0900;
+    }
+
+
+/***********************************************************\
+ * Buttons
+\***********************************************************/
+a.BackButton,
+a.SettingsButton {
+    width: 60px;
+    height: 61px;
+    display: block;
+    margin: 5px;
 }
 
-ul#menu li.selected a
-{
-    background-color: #FFF;
-    color: #000;
+a.BackButton span,
+a.SettingsButton span {
+    display: none;
 }
 
-/* MISC  
-----------------------------------------------------------*/
-.clear
-{
-    clear: both;
+a.BackButton {
+    background: url(Images/BackButton.png) top left no-repeat;
+    float: left;
+}
+
+a.SettingsButton {
+    background: url(Images/SettingsButton.png) top left no-repeat;
+    float: right;
+}
+
+a.DeleteIcon {
+	background: url(Images/DeleteIcon.png) top left no-repeat;
+	width: 29px;
+	height: 29px;
+	display: block;
+}
+
+a.Button {
+	background: url(Images/Header-Button.png) repeat-x;
+	border: 1px solid #000;
+	display: block;
+	line-height: 40px;
+	height: 40px;
+	padding: 0 4px;
+}
+
+/***********************************************************\
+ * WoW Style Rules
+\***********************************************************/
+/****** Text Modifiers ******/
+.MainStat { font-weight: bold; }
+
+/****** Class Colors ******/
+.Druid { color: #FF7D0A; }
+.Hunter { color: #ABD473; }
+.Mage { color: #69CCF0; }
+.Paladin { color: #F58CBA; }
+.Priest { color: #fff; }
+.Rogue { color: #FFF569; }
+.Shaman { color: #2459FF; }
+.Warlock { color: #9482CA; }
+.Warrior { color: #C79C6E; }
+.DeathKnight { color: #C41F3B; }
+
+/****** Magic School Colors ******/
+.Arcane { color: #fff; }
+.Fire { color: #FF4F6F; }
+.Frost { color: #69CCF0; }
+.Holy { color: #F58CBA; }
+.Shadow { color: #9482CA; }
+.Nature { color: #ABD473; }
+
+/***********************************************************\
+ * Utility
+\***********************************************************/
+div.cleaner { 
+	clear: both; 
+	padding: 0;
+	margin: 0;
 }

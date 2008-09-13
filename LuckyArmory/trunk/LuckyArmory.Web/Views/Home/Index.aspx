@@ -1,43 +1,37 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="LuckyArmory.Web.Views.Home.Index" %>
 
 <asp:Content ID="indexContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%= Html.Encode(ViewData["Message"]) %></h2>
     
-    <div class="Box">
-        <div class="BoxTitle">Favorites</div>
-        
-        <ul>
-            <asp:Repeater ID="FavoritesRepeater" runat="server">
-            <HeaderTemplate>
-            <li>
-            </HeaderTemplate>
-            <ItemTemplate>
-                <div class="DataBox DataRow">
-                    <span class="Left"><%# DataBinder.Eval(Container, "DataItem.Key") %></span>
-                    <span class="Right"><%# DataBinder.Eval(Container, "DataItem.Value") %></span>
-                    <div class="cleaner"></div>
-                </div>
-            </ItemTemplate>
-            <AlternatingItemTemplate>
-                <div class="DataBox DataRow Alt">
-                    <span class="Left"><%# DataBinder.Eval(Container, "DataItem.Key") %></span>
-                    <span class="Right"><%# DataBinder.Eval(Container, "DataItem.Value") %></span>
-                    <div class="cleaner"></div>
-                </div>
-            </AlternatingItemTemplate>
-            <FooterTemplate>
-            </li>
-            </FooterTemplate>
-            </asp:Repeater>
-        </ul>
-        
-        <div class="BottomBox"></div>
-    </div>
+    <dl id="FavoritesSection">
+        <dt class="Header">
+            Favorites:
+        </dt>
+        <dt class="Info">
+        <asp:Repeater ID="FavoritesRepeater" runat="server">
+        <ItemTemplate>
+            <div class="FavoriteRow">
+                <span class="Left"><a href="/Info/General<%# DataBinder.Eval(Container, "DataItem.Value") %>"><%# DataBinder.Eval(Container, "DataItem.Key") %></a></span>
+                <span class="Right"><a href="#" class="DeleteIcon"></a></span>
+                <div class="cleaner"></div>
+            </div>
+        </ItemTemplate>
+        <AlternatingItemTemplate>
+            <div class="FavoriteRow Alt">
+                <span class="Left"><a href="/Info/General<%# DataBinder.Eval(Container, "DataItem.Value") %>"><%# DataBinder.Eval(Container, "DataItem.Key") %></a></span>
+                <span class="Right"><a href="#" class="DeleteIcon"></a></span>
+                <div class="cleaner"></div>
+            </div>
+        </AlternatingItemTemplate>
+        </asp:Repeater>
+        </dt>
+    </dl>
     
-    <div class="Box">
-        <div class="BoxTitle">Character Lookup</div>
-        
-        <form action="/Home/LookUp" method="post">
+    <dl id="CharacterLookupForm">
+        <dt class="Header">
+            Character Lookup:
+        </dt>
+        <dt class="Info">        
+        <form id="LookupForm" action="/Home/LookUp" method="post">
             <div class="FormError">
                 <%= Html.Encode(ViewData["ErrorMessage"]) %>
             </div>
@@ -50,16 +44,17 @@
                 <%= Html.TextBox("Realm") %>
             </div>
             <div class="FormOption">
-                <!--input type="checkbox" id="Favorite" name="Favorite" checked="checked" /-->
-                <%= Html.CheckBox("Favorite", "", "Save", true) %>
+                <input type="checkbox" id="Favorite" name="Favorite" checked="checked" value="Save" />
+                <% //Html.CheckBox("Favorite", "", "Save", true) %>
                 <label for="Favorite">Save Character</label>
             </div>
             <div class="FormSubmit">
-                <input type="submit" value="Get Character" />
+                <input type="submit" visible="false" />
             </div>
-        </form>
-        
-        <div class="BottomBox"></div>
-    </div>
+        </form>    
+        </dt>
+    </dl>
+    
+    <a href="#Submit" onclick="$('#LookupForm').submit()" class="Button">Get Character</a>
 
 </asp:Content>

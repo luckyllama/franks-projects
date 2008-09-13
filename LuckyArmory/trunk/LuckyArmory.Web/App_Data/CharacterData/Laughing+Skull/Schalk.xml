@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/layout/character-sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <characterInfo>
+    <character battleGroup="Vindication" charUrl="r=Laughing+Skull&amp;n=Schalk" class="Rogue" classId="4" faction="Alliance" factionId="0" gender="Male" genderId="0" guildName="Was Here" guildUrl="r=Laughing+Skull&amp;n=Was+Here&amp;p=1" lastModified="September 1, 2008" level="19" name="Schalk" prefix="" race="Human" raceId="1" realm="Laughing Skull" suffix=""/>
+    <characterTab>
+      <talentSpec treeOne="8" treeThree="0" treeTwo="0"/>
+      <buffs/>
+      <debuffs/>
+      <pvp>
+        <lifetimehonorablekills value="0"/>
+        <arenacurrency value="0"/>
+      </pvp>
+      <professions>
+        <skill key="engineering" max="75" name="Engineering" value="1"/>
+        <skill key="mining" max="75" name="Mining" value="7"/>
+      </professions>
+      <title value=""/>
+      <knownTitles/>
+      <characterBars>
+        <health effective="681"/>
+        <secondBar casting="-1" effective="100" notCasting="-1" type="e"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="32" base="35" block="-1" effective="42"/>
+        <agility armor="124" attack="52" base="48" critHitPercent="8.11" effective="62"/>
+        <stamina base="33" effective="64" health="460" petBonus="-1"/>
+        <intellect base="23" critHitPercent="-1.00" effective="23" mana="-1" petBonus="-1"/>
+        <spirit base="29" effective="36" healthRegen="11" manaRegen="-1"/>
+        <armor base="450" effective="450" percent="18.26" petBonus="-1"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="-1" value="0"/>
+        <fire petBonus="-1" value="0"/>
+        <frost petBonus="-1" value="0"/>
+        <holy petBonus="-1" value="0"/>
+        <nature petBonus="-1" value="0"/>
+        <shadow petBonus="-1" value="0"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="22.7" max="65" min="43" percent="0" speed="2.40"/>
+        <offHandDamage dps="9.4" max="21" min="14" percent="0" speed="1.90"/>
+        <mainHandSpeed hastePercent="0.00" hasteRating="0" value="2.40"/>
+        <offHandSpeed hastePercent="0.00" hasteRating="0" value="1.90"/>
+        <power base="122" effective="122" increasedDps="8.0"/>
+        <hitRating increasedHitPercent="0.00" value="0"/>
+        <critChance percent="9.35" plusPercent="0.00" rating="0"/>
+        <expertise additional="0" percent="1.25" rating="0" value="5"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="53"/>
+        <damage dps="11.4" max="26" min="17" percent="0" speed="1.90"/>
+        <speed hastePercent="0.00" hasteRating="0" value="1.90"/>
+        <power base="71" effective="71" increasedDps="5.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="0.00" value="0"/>
+        <critChance percent="11.43" plusPercent="0.00" rating="0"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="0"/>
+          <fire value="0"/>
+          <frost value="0"/>
+          <holy value="0"/>
+          <nature value="0"/>
+          <shadow value="0"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="0"/>
+        <hitRating increasedHitPercent="0.00" value="0"/>
+        <critChance rating="0">
+          <arcane percent="0.00"/>
+          <fire percent="0.00"/>
+          <frost percent="0.00"/>
+          <holy percent="0.00"/>
+          <nature percent="0.00"/>
+          <shadow percent="0.00"/>
+        </critChance>
+        <penetration value="0"/>
+        <manaRegen casting="0.00" notCasting="0.00"/>
+      </spell>
+      <defenses>
+        <armor base="450" effective="450" percent="18.26" petBonus="-1"/>
+        <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="69.00"/>
+        <dodge increasePercent="0.00" percent="15.17" rating="0"/>
+        <parry increasePercent="0.00" percent="3.96" rating="0"/>
+        <block increasePercent="0.00" percent="0.00" rating="0"/>
+        <resilience damagePercent="0.00" hitPercent="0.00" value="0.00"/>
+      </defenses>
+      <items>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_bandana_03" id="7997" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="1953989384" slot="0"/>
+        <item durability="90" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_chest_leather_08" id="10399" maxDurability="90" permanentenchant="0" randomPropertiesId="0" seed="0" slot="4"/>
+        <item durability="18" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_belt_04" id="4666" maxDurability="18" permanentenchant="0" randomPropertiesId="0" seed="996895126" slot="5"/>
+        <item durability="65" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_pants_02" id="5199" maxDurability="65" permanentenchant="0" randomPropertiesId="0" seed="1819956225" slot="6"/>
+        <item durability="30" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_boots_05" id="6557" maxDurability="30" permanentenchant="0" randomPropertiesId="589" seed="0" slot="7"/>
+        <item durability="16" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_05" id="6070" maxDurability="16" permanentenchant="0" randomPropertiesId="0" seed="1777987062" slot="8"/>
+        <item durability="25" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_gauntlets_27" id="6586" maxDurability="25" permanentenchant="0" randomPropertiesId="593" seed="0" slot="9"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_19" id="9779" maxDurability="0" permanentenchant="0" randomPropertiesId="586" seed="1849568780" slot="14"/>
+        <item durability="70" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_sword_24" id="1937" maxDurability="70" permanentenchant="0" randomPropertiesId="0" seed="1538594222" slot="15"/>
+        <item durability="40" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_weapon_shortblade_04" id="3848" maxDurability="40" permanentenchant="0" randomPropertiesId="0" seed="1261686016" slot="16"/>
+        <item durability="200" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_throwingknife_01" id="25873" maxDurability="200" permanentenchant="0" randomPropertiesId="0" seed="0" slot="17"/>
+      </items>
+    </characterTab>
+  </characterInfo>
+</page>
+

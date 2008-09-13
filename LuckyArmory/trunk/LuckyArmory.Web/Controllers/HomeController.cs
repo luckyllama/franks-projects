@@ -15,7 +15,8 @@ namespace LuckyArmory.Web.Controllers {
             ViewData["Title"] = "Home Page";
             ViewData["ErrorMessage"] = errorMessage.UrlDecode();
 
-            ViewData["Favorites"] = getFavoritesData(FavoritesHandler.GetFavorites());
+            //ViewData["Favorites"] = getFavoritesData(FavoritesHandler.GetFavorites());
+            ViewData["Favorites"] = FavoritesHandler.GetFavorites();
 
             return View();
         }
@@ -50,6 +51,12 @@ namespace LuckyArmory.Web.Controllers {
 
         public ActionResult About() {
             ViewData["Title"] = "About Page";
+
+            return View();
+        }
+
+        public ActionResult Settings() {
+            ViewData["Title"] = "Settings";
 
             return View();
         }

@@ -19,7 +19,8 @@ namespace LuckyArmory.Lib.Handlers {
             if (cookieValue.Count != 0) {
                 foreach (string favorite in cookieValue.AllKeys) {
                     string queryString = HttpUtility.UrlDecode(cookieValue[favorite]);
-                    favorites.Add(favorite, queryString);
+                    string text = HttpUtility.UrlDecode(favorite);
+                    favorites.Add(text, queryString);
                 }
             }
 
@@ -41,10 +42,11 @@ namespace LuckyArmory.Lib.Handlers {
         #region Save Favorite
 
         public static void SaveNewFavorite(string realm, string name) {
-            string newValue = ApplicationSettings.ArmorySearchQueryString(realm, name);
-
+            string newValue = ApplicationSettings.FavoritesQueryString(realm, name);
             newValue = HttpUtility.UrlEncode(newValue);
+            
             string newKey = name + " of " + realm;
+            newKey = HttpUtility.UrlEncode(newKey);
 
             CookieHandler.AddFavorite(newKey, newValue);
         }

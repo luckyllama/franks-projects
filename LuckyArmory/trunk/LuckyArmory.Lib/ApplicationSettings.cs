@@ -11,7 +11,7 @@ namespace LuckyArmory.Lib {
 
         public static string CharacterDataCacheDirectoryPath {
             get {
-                return ConfigurationSettings.AppSettings["CharacterDataCacheFilePath"]; ;
+                return ConfigurationSettings.AppSettings["CharacterDataCacheFilePath"];
             }
         }
 
@@ -53,13 +53,22 @@ namespace LuckyArmory.Lib {
 
         public static string FavoritesCookie {
             get {
-                return ConfigurationSettings.AppSettings["FavoritesCookie"]; ;
+                return ConfigurationSettings.AppSettings["FavoritesCookie"];
             }
+        }
+
+        public static string FavoritesQueryString(string realm, string name) {
+            string uri = ConfigurationSettings.AppSettings["FavoritesQueryString"];
+
+            uri = uri.Replace("{realm}", realm);
+            uri = uri.Replace("{name}", name);
+
+            return uri;
         }
 
         public static string SettingsCookie {
             get {
-                return ConfigurationSettings.AppSettings["SettingsCookie"]; ;
+                return ConfigurationSettings.AppSettings["SettingsCookie"];
             }
         }
 
