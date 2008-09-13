@@ -65,5 +65,17 @@ namespace LuckyArmory.Lib.Data.Type {
 
         public double ManaRegenCasting { get; set; }
         public double ManaRegenNotCasting { get; set; }
+
+        public bool HasSpell {
+            get {
+                int totalSpellStats = BonusDamageArcane + BonusDamageFire
+                    + BonusDamageFrost + BonusDamageHoly + BonusDamageNature
+                    + BonusDamageShadow + BonusHealing;
+                if (totalSpellStats > 0) {
+                    return true;
+                }
+                return false;
+            }
+        }
     }
 }

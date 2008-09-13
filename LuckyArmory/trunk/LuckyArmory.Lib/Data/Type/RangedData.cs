@@ -16,5 +16,14 @@
 
         public int CritChanceRating { get; set; }
         public double CritChancePercent { get; set; }
+
+        public bool HasRanged {
+            get {
+                if (System.Convert.ToInt32(WeaponMax) > 0) {
+                    return true;
+                }
+                return false;
+            }
+        }
     }
 }

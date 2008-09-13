@@ -9,8 +9,62 @@
 //------------------------------------------------------------------------------
 
 namespace LuckyArmory.Web.Views.Info {
-
-
+    
+    
     public partial class General {
+        
+        /// <summary>
+        /// BaseStatsRepeater control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater BaseStatsRepeater;
+        
+        /// <summary>
+        /// MeleeRepeater control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater MeleeRepeater;
+        
+        /// <summary>
+        /// RangedRepeater control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater RangedRepeater;
+        
+        /// <summary>
+        /// SpellRepeater control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater SpellRepeater;
+        
+        /// <summary>
+        /// DefensesRepeater control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater DefensesRepeater;
+        
+        /// <summary>
+        /// ResistancesRepeater control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater ResistancesRepeater;
     }
 }

@@ -9,8 +9,8 @@
 //------------------------------------------------------------------------------
 
 namespace LuckyArmory.Web.Views.Home {
-
-
+    
+    
     public partial class About {
     }
 }

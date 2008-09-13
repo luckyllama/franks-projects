@@ -64,7 +64,7 @@
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LuckyArmory\LuckyArmory.Web.csproj">
+    <ProjectReference Include="..\LuckyArmory.Web\LuckyArmory.Web.csproj">
       <Project>{C42D3D09-8406-4F9B-9795-C2B7E0F25F3B}</Project>
       <Name>LuckyArmory.Web</Name>
     </ProjectReference>

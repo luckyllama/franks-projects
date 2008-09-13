@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="LuckyArmory.GlobalApplication" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="LuckyArmory.Web.GlobalApplication" Language="C#" %>

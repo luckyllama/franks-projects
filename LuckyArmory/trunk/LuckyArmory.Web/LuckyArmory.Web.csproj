@@ -117,7 +117,7 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LuckyArmoryLibrary\LuckyArmory.Lib.csproj">
+    <ProjectReference Include="..\LuckyArmory.Lib\LuckyArmory.Lib.csproj">
       <Project>{CA1D53F0-4E79-4AFE-BFB9-16161F3F77B8}</Project>
       <Name>LuckyArmory.Lib</Name>
     </ProjectReference>

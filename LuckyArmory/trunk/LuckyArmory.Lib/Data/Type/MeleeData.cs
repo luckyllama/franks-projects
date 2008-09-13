@@ -24,5 +24,14 @@
 
         public int ExpertiseRating { get; set; }
         public double ExpertisePercent { get; set; }
+
+        public bool HasOffHandWeapon {
+            get {
+                if (System.Convert.ToInt32(OffHandMin) > 0) {
+                    return true;
+                }
+                return false;
+            }
+        }
     }
 }
