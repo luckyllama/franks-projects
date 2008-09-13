@@ -1,6 +1,0 @@
-C:\Documents and Settings\XP\My Documents\Visual Studio 2008\Projects\LuckyArmory\LuckyArmoryLibrary\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\XP\My Documents\Visual Studio 2008\Projects\LuckyArmory\LuckyArmoryLibrary\bin\Debug\LuckyArmoryLibrary.dll.config
-C:\Documents and Settings\XP\My Documents\Visual Studio 2008\Projects\LuckyArmory\LuckyArmoryLibrary\bin\Debug\LuckyArmoryLibrary.dll
-C:\Documents and Settings\XP\My Documents\Visual Studio 2008\Projects\LuckyArmory\LuckyArmoryLibrary\bin\Debug\LuckyArmoryLibrary.pdb
-C:\Documents and Settings\XP\My Documents\Visual Studio 2008\Projects\LuckyArmory\LuckyArmoryLibrary\obj\Debug\LuckyArmoryLibrary.dll
-C:\Documents and Settings\XP\My Documents\Visual Studio 2008\Projects\LuckyArmory\LuckyArmoryLibrary\obj\Debug\LuckyArmoryLibrary.pdb
