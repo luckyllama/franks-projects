@@ -74,6 +74,34 @@ namespace LuckyArmory.Lib {
 
         #endregion Cookie Settings
 
+        #region WoW Head Settings
+
+        public static string WoWHeadItemXmlUri(int id) {
+            string uri = ConfigurationSettings.AppSettings["WoWHeadItemXmlUri"];
+
+            uri = uri.Replace("{id}", id.ToString());
+
+            return uri;
+        }
+
+        public static string WoWHeadImageUri(string name) {
+            string uri = ConfigurationSettings.AppSettings["WowHeadImageUri"];
+
+            uri = uri.Replace("{name}", name);
+
+            return uri;
+        }
+
+        public static string WoWHeadItemUri(int id) {
+            string uri = ConfigurationSettings.AppSettings["WoWHeadItemUri"];
+
+            uri = uri.Replace("{id}", id.ToString());
+
+            return uri;
+        }
+
+        #endregion WoW Head Settings
+
     }
 
 }

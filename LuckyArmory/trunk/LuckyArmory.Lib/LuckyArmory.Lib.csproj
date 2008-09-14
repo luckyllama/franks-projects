@@ -47,22 +47,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationSettings.cs" />
-    <Compile Include="Armory\ArmoryFetcher.cs" />
+    <Compile Include="Data\WoWHeadItemData.cs" />
+    <Compile Include="Fetcher\ArmoryFetcher.cs" />
     <Compile Include="Data\CharacterData.cs" />
     <Compile Include="Data\Type\BarsData.cs" />
     <Compile Include="Data\Type\BaseStatsData.cs" />
     <Compile Include="Data\Type\DefensesData.cs" />
     <Compile Include="Data\Type\GeneralData.cs" />
+    <Compile Include="Data\Type\ItemData.cs" />
     <Compile Include="Data\Type\MeleeData.cs" />
     <Compile Include="Data\Type\RangedData.cs" />
     <Compile Include="Data\Type\ResistancesData.cs" />
     <Compile Include="Data\Type\SpellData.cs" />
     <Compile Include="Data\Type\TalentData.cs" />
+    <Compile Include="Fetcher\WoWHeadItemFetcher.cs" />
+    <Compile Include="Fetcher\XmlFetcher.cs" />
     <Compile Include="Handlers\CacheHandler.cs" />
     <Compile Include="Handlers\CookieHandler.cs" />
     <Compile Include="Handlers\FavoritesHandler.cs" />
+    <Compile Include="Handlers\SettingsHandler.cs" />
     <Compile Include="WoW\ClassInformation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WoW\GearInformation.cs" />
     <Compile Include="WoW\TalentInformation.cs" />
     <Compile Include="Utility.cs" />
   </ItemGroup>

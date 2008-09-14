@@ -1,9 +1,10 @@
 using System;
 using System.IO;
 using System.Xml.Linq;
-using LuckyArmory.Lib.Armory;
+using LuckyArmory.Lib.Fetcher;
 using LuckyArmory.Lib.Data.Type;
 using LuckyArmory.Lib.Handlers;
+using System.Collections.Generic;
 
 namespace LuckyArmory.Lib.Data {
 
@@ -54,6 +55,8 @@ namespace LuckyArmory.Lib.Data {
                 getSpellStats(characterTab);
                 getDefenses(characterTab);
                 getResistances(characterTab);
+
+                getItems(characterTab);
 
                 //getProfessions(characterInfo);
             }
@@ -226,23 +229,31 @@ namespace LuckyArmory.Lib.Data {
             Resistances.Shadow = Convert.ToInt32(resistances.Element("shadow").Attribute("value").Value);
         }
 
+        private void getItems(XElement characterTab) {
+            IEnumerable<XElement> items = characterTab.Element("items").Elements("item");
+
+            foreach (XElement item in items) {
+                ItemData newItem = new ItemData();
+
+                newItem.Id = Convert.ToInt32(item.Attribute("id").Value);
+                newItem.Icon = item.Attribute("icon").Value;
+                newItem.Slot = Convert.ToInt32(item.Attribute("slot").Value);
+                newItem.EnchantId = Convert.ToInt32(item.Attribute("permanentenchant").Value);
+                newItem.Gem0Id = Convert.ToInt32(item.Attribute("gem0Id").Value);
+                newItem.Gem1Id = Convert.ToInt32(item.Attribute("gem1Id").Value);
+                newItem.Gem2Id = Convert.ToInt32(item.Attribute("gem2Id").Value);
+
+                Gear.Add(newItem);
+            }
+        }
+
         private static void getProfessions(XElement characterInfo) {
             XElement characterTab = characterInfo.Element("characterTab");
             XElement profs = characterTab.Element("professions");
 
             foreach (XElement skill in profs.Elements("skill")) {
-
+                // TODO: NYI
             }
-
-            /* var profs = from item in profsEl.Descendants("skill")
-            select new
-            {
-                Key = item.Attribute("key").Value,
-                Name = item.Attribute("max").Value,
-                Max = item.Attribute("name").Value,
-                Value = item.Attribute("value").Value
-            };
-             * */
         }
 
         #endregion Constructors
@@ -258,6 +269,8 @@ namespace LuckyArmory.Lib.Data {
         public GeneralData General = new GeneralData();
         public BarsData Bars = new BarsData();
         public TalentData Talents;
+
+        public List<ItemData> Gear = new List<ItemData>();
 
         public BaseStatsData BaseStats = new BaseStatsData();
         public MeleeData Melee = new MeleeData();
