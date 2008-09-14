@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/layout/character-sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <characterInfo>
+    <character battleGroup="Vindication" charUrl="r=Laughing+Skull&amp;n=Tiermeister" class="Hunter" classId="3" faction="Alliance" factionId="0" gender="Male" genderId="0" guildName="" lastModified="September 11, 2008" level="70" name="Tiermeister" prefix="" race="Draenei" raceId="11" realm="Laughing Skull" suffix="">
+      <arenaTeams>
+        <arenaTeam battleGroup="Vindication" faction="Alliance" factionId="0" gamesPlayed="10" gamesWon="1" lastSeasonRanking="0" name="Malaise" ranking="19938" rating="1347" realm="Laughing Skull" realmUrl="b=Vindication&amp;r=Laughing+Skull&amp;ts=2&amp;t=Malaise&amp;ff=realm&amp;fv=Laughing+Skull&amp;select=Malaise" seasonGamesPlayed="61" seasonGamesWon="25" size="2" url="r=Laughing+Skull&amp;ts=2&amp;t=Malaise&amp;select=Malaise">
+          <emblem background="ff000000" borderColor="ff7e0700" borderStyle="2" iconColor="ff7a0200" iconStyle="70"/>
+          <members>
+            <character battleGroup="" charUrl="r=Laughing+Skull&amp;n=Oizys" class="Rogue" classId="4" contribution="1401" gamesPlayed="7" gamesWon="1" gender="Female" genderId="1" guildId="0" name="Oizys" race="Human" raceId="1" seasonGamesPlayed="41" seasonGamesWon="19" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Laughing+Skull&amp;n=Drathor" class="Priest" classId="5" contribution="1391" gamesPlayed="3" gamesWon="0" gender="Male" genderId="0" guild="Was Here" guildId="797702" guildUrl="r=Laughing+Skull&amp;n=Was+Here&amp;p=1" name="Drathor" race="Dwarf" raceId="3" seasonGamesPlayed="20" seasonGamesWon="6" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Laughing+Skull&amp;n=Tiermeister" class="Hunter" classId="3" contribution="1417" gamesPlayed="3" gamesWon="0" gender="Male" genderId="0" guildId="0" name="Tiermeister" race="Draenei" raceId="11" seasonGamesPlayed="9" seasonGamesWon="2" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Laughing+Skull&amp;n=Tiermann" class="Druid" classId="11" contribution="1410" gamesPlayed="7" gamesWon="1" gender="Male" genderId="0" guildId="0" name="Tiermann" race="Night Elf" raceId="4" seasonGamesPlayed="38" seasonGamesWon="18" teamRank="1"/>
+          </members>
+        </arenaTeam>
+        <arenaTeam battleGroup="Vindication" faction="Alliance" factionId="0" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Parental Advisory" ranking="0" rating="1440" realm="Laughing Skull" realmUrl="b=Vindication&amp;r=Laughing+Skull&amp;ts=3&amp;t=Parental+Advisory&amp;ff=realm&amp;fv=Laughing+Skull&amp;select=Parental+Advisory" seasonGamesPlayed="10" seasonGamesWon="3" size="3" url="r=Laughing+Skull&amp;ts=3&amp;t=Parental+Advisory&amp;select=Parental+Advisory">
+          <emblem background="ff52edde" borderColor="ff8236bf" borderStyle="4" iconColor="ffa612f5" iconStyle="31"/>
+          <members>
+            <character battleGroup="" charUrl="r=Laughing+Skull&amp;n=Tiermeister" class="Hunter" classId="3" contribution="1451" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guildId="0" name="Tiermeister" race="Draenei" raceId="11" seasonGamesPlayed="3" seasonGamesWon="0" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Laughing+Skull&amp;n=Oizys" class="Rogue" classId="4" contribution="1487" gamesPlayed="0" gamesWon="0" gender="Female" genderId="1" guildId="0" name="Oizys" race="Human" raceId="1" seasonGamesPlayed="7" seasonGamesWon="3" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Laughing+Skull&amp;n=Drathor" class="Priest" classId="5" contribution="1451" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Was Here" guildId="797702" guildUrl="r=Laughing+Skull&amp;n=Was+Here&amp;p=1" name="Drathor" race="Dwarf" raceId="3" seasonGamesPlayed="3" seasonGamesWon="0" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Laughing+Skull&amp;n=Tiermann" class="Druid" classId="11" contribution="1487" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guildId="0" name="Tiermann" race="Night Elf" raceId="4" seasonGamesPlayed="7" seasonGamesWon="3" teamRank="1"/>
+          </members>
+        </arenaTeam>
+        <arenaTeam battleGroup="Vindication" faction="Alliance" factionId="0" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Birdpoo Bombers" ranking="3262" rating="1354" realm="Laughing Skull" realmUrl="b=Vindication&amp;r=Laughing+Skull&amp;ts=5&amp;t=Birdpoo+Bombers&amp;ff=realm&amp;fv=Laughing+Skull&amp;select=Birdpoo+Bombers" seasonGamesPlayed="30" seasonGamesWon="7" size="5" url="r=Laughing+Skull&amp;ts=5&amp;t=Birdpoo+Bombers&amp;select=Birdpoo+Bombers">
+          <emblem background="ff0bd313" borderColor="ff0f0f0f" borderStyle="6" iconColor="ff13130e" iconStyle="101"/>
+          <members>
+            <character battleGroup="" charUrl="r=Laughing+Skull&amp;n=Dracy" class="Priest" classId="5" contribution="1354" gamesPlayed="0" gamesWon="0" gender="Female" genderId="1" guild="Knights of Frumundabuta" guildId="646741" guildUrl="r=Laughing+Skull&amp;n=Knights+of+Frumundabuta&amp;p=1" name="Dracy" race="Human" raceId="1" seasonGamesPlayed="30" seasonGamesWon="7" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Laughing+Skull&amp;n=Trauerfall" class="Warlock" classId="9" contribution="1397" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Was Here" guildId="797702" guildUrl="r=Laughing+Skull&amp;n=Was+Here&amp;p=1" name="Trauerfall" race="Gnome" raceId="7" seasonGamesPlayed="14" seasonGamesWon="2" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Laughing+Skull&amp;n=Aldreas" class="Paladin" classId="2" contribution="1467" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guildId="0" name="Aldreas" race="Human" raceId="1" seasonGamesPlayed="3" seasonGamesWon="0" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Laughing+Skull&amp;n=Playbaby" class="Hunter" classId="3" contribution="1354" gamesPlayed="0" gamesWon="0" gender="Female" genderId="1" guildId="0" name="Playbaby" race="Draenei" raceId="11" seasonGamesPlayed="30" seasonGamesWon="7" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Laughing+Skull&amp;n=Saberel" class="Hunter" classId="3" contribution="1354" gamesPlayed="0" gamesWon="0" gender="Female" genderId="1" guildId="0" name="Saberel" race="Night Elf" raceId="4" seasonGamesPlayed="30" seasonGamesWon="7" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Laughing+Skull&amp;n=Golgannis" class="Shaman" classId="7" contribution="1459" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guildId="0" name="Golgannis" race="Draenei" raceId="11" seasonGamesPlayed="3" seasonGamesWon="0" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Laughing+Skull&amp;n=Tiermeister" class="Hunter" classId="3" contribution="1424" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guildId="0" name="Tiermeister" race="Draenei" raceId="11" seasonGamesPlayed="6" seasonGamesWon="0" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Laughing+Skull&amp;n=Galewynde" class="Priest" classId="5" contribution="1423" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guildId="0" name="Galewynde" race="Human" raceId="1" seasonGamesPlayed="11" seasonGamesWon="2" teamRank="1"/>
+          </members>
+        </arenaTeam>
+      </arenaTeams>
+    </character>
+    <characterTab>
+      <talentSpec treeOne="41" treeThree="0" treeTwo="20"/>
+      <buffs>
+        <spell effect="Increases Stamina by 79." icon="spell_holy_wordfortitude" name="Power Word: Fortitude"/>
+        <spell effect="Shadow resistance increased by 70." icon="spell_shadow_antishadow" name="Shadow Protection"/>
+        <spell effect="Increases ranged attack power by 155." icon="spell_nature_ravenform" name="Aspect of the Hawk"/>
+        <spell effect="Increases Spirit by 50." icon="spell_holy_divinespirit" name="Divine Spirit"/>
+      </buffs>
+      <debuffs/>
+      <pvp>
+        <lifetimehonorablekills value="1223"/>
+        <arenacurrency value="1235"/>
+      </pvp>
+      <professions>
+        <skill key="mining" max="375" name="Mining" value="375"/>
+        <skill key="skinning" max="375" name="Skinning" value="375"/>
+      </professions>
+      <title value=""/>
+      <knownTitles/>
+      <characterBars>
+        <health effective="9542"/>
+        <secondBar casting="0" effective="5533" notCasting="80" type="m"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="55" base="65" block="-1" effective="65"/>
+        <agility armor="930" attack="455" base="148" critHitPercent="10.09" effective="465"/>
+        <stamina base="107" effective="570" health="5520" petBonus="171"/>
+        <intellect base="78" critHitPercent="5.63" effective="162" mana="2150" petBonus="-1"/>
+        <spirit base="85" effective="135" healthRegen="20" manaRegen="80"/>
+        <armor base="5323" effective="5323" percent="33.52" petBonus="1863"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="0" value="0"/>
+        <fire petBonus="0" value="0"/>
+        <frost petBonus="0" value="0"/>
+        <holy petBonus="0" value="0"/>
+        <nature petBonus="0" value="0"/>
+        <shadow petBonus="32" value="80"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="178.6" max="690" min="561" percent="0" speed="3.50"/>
+        <offHandDamage dps="43.9" max="88" min="87" percent="0" speed="2.00"/>
+        <mainHandSpeed hastePercent="0.00" hasteRating="0" value="3.50"/>
+        <offHandSpeed hastePercent="0.00" hasteRating="0" value="2.00"/>
+        <power base="650" effective="1210" increasedDps="86.0"/>
+        <hitRating increasedHitPercent="4.95" value="78"/>
+        <critChance percent="15.60" plusPercent="5.66" rating="125"/>
+        <expertise additional="0" percent="0.00" rating="0" value="0"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="350"/>
+        <damage dps="279.8" max="678" min="539" percent="0" speed="2.17"/>
+        <speed hastePercent="0.00" hasteRating="0" value="2.17"/>
+        <power base="595" effective="1310" increasedDps="93.0" petAttack="288.20" petSpell="168.60"/>
+        <hitRating increasedHitPercent="4.95" value="78"/>
+        <critChance percent="20.76" plusPercent="5.66" rating="125"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="13"/>
+          <fire value="13"/>
+          <frost value="13"/>
+          <holy value="13"/>
+          <nature value="13"/>
+          <shadow value="13"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="13"/>
+        <hitRating increasedHitPercent="0.00" value="0"/>
+        <critChance rating="0">
+          <arcane percent="5.63"/>
+          <fire percent="5.63"/>
+          <frost percent="5.63"/>
+          <holy percent="5.63"/>
+          <nature percent="5.63"/>
+          <shadow percent="5.63"/>
+        </critChance>
+        <penetration value="0"/>
+        <manaRegen casting="0.00" notCasting="80.00"/>
+      </spell>
+      <defenses>
+        <armor base="5323" effective="5323" percent="33.52" petBonus="1863"/>
+        <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="348.00"/>
+        <dodge increasePercent="0.00" percent="13.07" rating="0"/>
+        <parry increasePercent="0.00" percent="4.92" rating="0"/>
+        <block increasePercent="0.00" percent="0.00" rating="0"/>
+        <resilience damagePercent="5.94" hitPercent="2.97" value="117.00"/>
+      </defenses>
+      <items>
+        <item durability="66" gem0Id="0" gem1Id="23100" gem2Id="0" icon="inv_helmet_09" id="35378" maxDurability="70" permanentenchant="2841" randomPropertiesId="0" seed="0" slot="0"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_06" id="25562" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="34719718" slot="1"/>
+        <item durability="57" gem0Id="23110" gem1Id="23110" gem2Id="0" icon="inv_shoulder_15" id="27797" maxDurability="60" permanentenchant="0" randomPropertiesId="0" seed="0" slot="2"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_14" id="23345" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="0" slot="3"/>
+        <item durability="118" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_chest_plate10" id="31286" maxDurability="120" permanentenchant="2841" randomPropertiesId="0" seed="851211436" slot="4"/>
+        <item durability="33" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_belt_31" id="24894" maxDurability="35" permanentenchant="0" randomPropertiesId="-40" seed="0" slot="5"/>
+        <item durability="88" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_pants_mail_15" id="35379" maxDurability="90" permanentenchant="2841" randomPropertiesId="0" seed="0" slot="6"/>
+        <item durability="67" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_boots_plate_06" id="33878" maxDurability="70" permanentenchant="2841" randomPropertiesId="0" seed="0" slot="7"/>
+        <item durability="34" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_10" id="24909" maxDurability="35" permanentenchant="0" randomPropertiesId="-40" seed="480706591" slot="8"/>
+        <item durability="50" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_gauntlets_65" id="34991" maxDurability="50" permanentenchant="0" randomPropertiesId="0" seed="0" slot="9"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_43" id="27733" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="548937532" slot="10"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_ahnqiraj_01" id="31277" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="1519267264" slot="11"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_datacrystal06" id="28041" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="36293548" slot="12"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_talisman_04" id="25633" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="74689414" slot="13"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_05" id="28032" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="1548657795" slot="14"/>
+        <item durability="100" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_axe_40" id="31291" maxDurability="100" permanentenchant="0" randomPropertiesId="0" seed="0" slot="15"/>
+        <item durability="87" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_weapon_crossbow_16" id="29351" maxDurability="90" permanentenchant="0" randomPropertiesId="0" seed="0" slot="17"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_tabardsummer01" id="35280" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="2103654228" slot="18"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_ammo_arrow_01" id="28056" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="0" slot="-1"/>
+      </items>
+    </characterTab>
+  </characterInfo>
+</page>
+

@@ -97,6 +97,13 @@
     <Compile Include="Views\Home\Settings.aspx.designer.cs">
       <DependentUpon>Settings.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Info\Gear.aspx.cs">
+      <DependentUpon>Gear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Info\Gear.aspx.designer.cs">
+      <DependentUpon>Gear.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Info\General.aspx.cs">
       <DependentUpon>General.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -117,11 +124,21 @@
     <Content Include="Content\Images\BottomBox.png" />
     <Content Include="Content\Images\DeleteIcon.png" />
     <Content Include="Content\Images\Header-Active.png" />
+    <Content Include="Content\Images\Header-Button.png" />
     <Content Include="Content\Images\Header.png" />
     <Content Include="Content\Images\SettingsButton.png" />
     <Content Include="Content\Images\TopBox.png" />
+    <Content Include="Lib\facebox\b.png" />
+    <Content Include="Lib\facebox\bl.png" />
+    <Content Include="Lib\facebox\br.png" />
+    <Content Include="Lib\facebox\closelabel.gif" />
+    <Content Include="Lib\facebox\facebox.css" />
+    <Content Include="Lib\facebox\facebox.js" />
+    <Content Include="Lib\facebox\loading.gif" />
+    <Content Include="Lib\facebox\README.txt" />
+    <Content Include="Lib\facebox\tl.png" />
+    <Content Include="Lib\facebox\tr.png" />
     <Content Include="Lib\jquery-1.2.6.js" />
-    <Content Include="Lib\jquery-ui-1.6rc1.min.js" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Images\Avatar\0-1-1.gif" />
@@ -230,6 +247,7 @@
     <Content Include="Images\Avatar\1-8-8.gif" />
     <Content Include="Lib\jquery-1.2.6.min.js" />
     <Content Include="Views\Home\Settings.aspx" />
+    <Content Include="Views\Info\Gear.aspx" />
     <Content Include="Views\Info\General.aspx" />
     <Content Include="Web.config" />
     <Content Include="Content\Site.css" />

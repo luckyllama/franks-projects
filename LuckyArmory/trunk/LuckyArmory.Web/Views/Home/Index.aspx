@@ -6,7 +6,7 @@
         <dt class="Header">
             Favorites:
         </dt>
-        <dt class="Info">
+        <dd class="Show">
         <asp:Repeater ID="FavoritesRepeater" runat="server">
         <ItemTemplate>
             <div class="FavoriteRow">
@@ -23,7 +23,7 @@
             </div>
         </AlternatingItemTemplate>
         </asp:Repeater>
-        </dt>
+        </dd>
     </dl>
     
     <dl id="CharacterLookupForm">

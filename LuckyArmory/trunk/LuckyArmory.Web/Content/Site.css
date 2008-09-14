@@ -63,7 +63,6 @@ h4{ font-size: 1.1em; }
 p{ font-size: 1.1em; }
 
 a, a:visited { color: #fff; outline: invert; text-decoration: none; }
-a:hover { text-decoration: underline; }
 a img, img a {border: none; text-decoration: none;}
 
 /***********************************************************\
@@ -135,7 +134,7 @@ div#BottomContent {
  * Forms
 \***********************************************************/
 
-.FormItem, .FormOption, .FormSubmit { 
+.FormItem, .FormOption, .FormSubmit .FormError { 
 	padding: 4px 15px; 
 }
 .FormItem label {
@@ -148,6 +147,10 @@ div#BottomContent {
 	font-size: 105%;
 	width: 90%;
 }
+.FormError {
+	color: #f00;	
+}
+
 dl#CharacterLookupForm .FormSubmit {
 	display: none;
 }
@@ -192,9 +195,22 @@ dl dd {
 	clear: both;	
 	padding: 4px 10px;
 }
+	dl dd.Seperator {
+		background-color: #fff;
+		height: 1px;
+		padding: 0;
+		margin: 5px;
+	}
 
 dl dd div {
 	padding: 2px 4px;
+}
+
+div.Seperator {
+	background-color: #fff;
+	height: 1px;
+	padding: 0;
+	margin: 10px 4px;
 }
 div.Alt {
 	background-color: #4A4B4F;
@@ -226,6 +242,9 @@ div.HealthBarBox {
         background-color: #9D0900;
     }
 
+div.GearItem img {
+	float: left;	
+}
 
 /***********************************************************\
  * Buttons
@@ -261,12 +280,13 @@ a.DeleteIcon {
 }
 
 a.Button {
-	background: url(Images/Header-Button.png) repeat-x;
-	border: 1px solid #000;
+	background: url(Images/Header-Button.png) no-repeat;
 	display: block;
 	line-height: 40px;
 	height: 40px;
 	padding: 0 4px;
+	margin: 5px 10px;
+	width: 300px;
 }
 
 /***********************************************************\
@@ -294,6 +314,15 @@ a.Button {
 .Holy { color: #F58CBA; }
 .Shadow { color: #9482CA; }
 .Nature { color: #ABD473; }
+
+/****** Item Quaility ******/
+.Artifact { color: #E5CC80; }
+.Legendary { color: #FF8000; }
+.Epic { color: #A335EE; }
+.Rare { color: #0070DD; }
+.Uncommon { color: #1EFF00; }
+.Common { color: #fff; }
+.Poor { color: #9D9D9D; }
 
 /***********************************************************\
  * Utility

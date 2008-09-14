@@ -12,21 +12,8 @@
             <%= data.General.Level%> 
             <%= data.General.Class%>
         </div>
-        <% if (data.General.GuildName != "") { %>
-        &lt;<%= data.General.GuildName%>&gt;
-        <br />
-        <% } %>
-        
-        <%= data.General.Faction%> - 
-        <%= data.General.Gender%> - 
-        <%= data.General.Race%>
-        
-        <br />
-        
-        <%= data.General.Realm%> - 
-        <%= data.General.Battlegroup%>
     </dt>
-    <dd>
+    <dd class="Show">
         <% if (data.General.GuildName != "") { %>
         &lt;<%= data.General.GuildName%>&gt;
         <br />
@@ -42,20 +29,24 @@
         <%= data.General.Battlegroup%>
     </dd>
     
-    <dt class="Info">
+    <dd class="Show Seperator"></dd>
+    
+    <dd class="Show">
         <span class="Left"><%= data.Talents.Talents %></span>
         <span class="Right"><%= data.Talents.TalentSpec%></span>
         <div class="cleaner"> </div>
-    </dt>
+    </dd>
     
-    <dt class="Info">
+    <dd class="Show Seperator"></dd>
+    
+    <dd class="Show">
         <div class="HealthBarBox">
             <%= data.Bars.Health %>
         </div>
         <div class="PowerBarBox <%= data.Bars.PowerBarType %>">
             <%= data.Bars.PowerBar%>
         </div>
-    </dt>
+    </dd>
     
     <dt class="Header">
         <a href="#BaseStats">Base Stats</a>
@@ -201,5 +192,10 @@
 </dl>
 
 </div>
+<div class="Seperator"></div>
+
+<a href="/Info/Gear/<%= HttpUtility.UrlEncode(data.General.Realm) %>/<%= HttpUtility.UrlEncode(data.General.Name) %>" class="Button"><span>Gear</span></a>
+
+<div class="Seperator"></div>
 
 </asp:Content>

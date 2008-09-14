@@ -6,12 +6,15 @@
     <title><%= Html.Encode(ViewData["Title"]) %> - LuckyArmory</title>
     
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.wowhead.com/widgets/power/power.css?3" rel="Stylesheet" type="text/css" />
     <script src="/Lib/jquery-1.2.6.js" type="text/javascript"></script>
+    <link href="/Lib/facebox/facebox.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script src="/Lib/facebox/facebox.js" type="text/javascript"></script> 
     
     <meta name = "viewport" content = "width = device-width, user-scalable = no" />
     
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(function() {
             $("dd:not(.Show)").hide();
             $("dt a").click(function() {
                 $(this).parent().next().slideToggle("slow");
@@ -25,7 +28,7 @@
 <body>
 <div id="Page">
 	<div id="TopContent">
-		iWoW Armory
+		LuckyArmory
 	</div>
 	
 	<div id="MainContent">

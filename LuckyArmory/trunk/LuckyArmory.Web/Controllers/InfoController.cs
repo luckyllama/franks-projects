@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using LuckyArmory.Lib.Handlers;
 using LuckyArmory.Lib.Data;
+using System.Web.Script.Serialization;
+using LuckyArmory.Lib.Fetcher;
 
 namespace LuckyArmory.Web.Controllers {
 
@@ -39,7 +41,7 @@ namespace LuckyArmory.Web.Controllers {
             return View();
         }
 
-        #region Create Repeater Data
+        #region Create General Repeater Data
 
         #region Base Stats Repeater
 
@@ -253,7 +255,30 @@ namespace LuckyArmory.Web.Controllers {
 
         #endregion Helpful Methods
 
-        #endregion Create Repeater Data
+        #endregion Create General Repeater Data
+
+        public ActionResult Gear(string realm, string name) {
+            ViewData["Title"] = "Gear";
+
+            if (string.IsNullOrEmpty(realm) || string.IsNullOrEmpty(name)) {
+                return RedirectToAction("Index", "Home");
+            }
+
+            CharacterData data = new CharacterData(realm, name, CharacterData.Source.Cache);
+
+            if (data.HasError) {
+                return RedirectToAction("Index", "Home", new { errorMessage = "noChar" });
+            }
+
+            ViewData["Gear"] = data.Gear;
+
+            return View();
+        }
+
+        public ActionResult Item(int id) {
+            WoWHeadItemData result = new WoWHeadItemData(id);
+            return Json(result);
+        }
 
     }
 }
