@@ -5,9 +5,9 @@ using System.Web;
 
 namespace LuckyArmory.Lib.Handlers {
 
-    public class FavoritesHandler {
+    public class FavoritesHandler : CookieHandler {
 
-        private FavoritesHandler() { }
+        protected FavoritesHandler() { }
 
         #region Get Favorites
 
@@ -19,7 +19,7 @@ namespace LuckyArmory.Lib.Handlers {
             if (cookieValue.Count != 0) {
                 foreach (string favorite in cookieValue.AllKeys) {
                     string queryString = HttpUtility.UrlDecode(cookieValue[favorite]);
-                    string text = HttpUtility.UrlDecode(favorite);
+                    string text = HttpUtility.UrlDecode(favorite).Replace('+', ' ');
                     favorites.Add(text, queryString);
                 }
             }
@@ -28,7 +28,7 @@ namespace LuckyArmory.Lib.Handlers {
         }
 
         private static NameValueCollection getFavoritesFromCookie() {
-            HttpCookie favoritesCookie = CookieHandler.FavoritesCookie;
+            HttpCookie favoritesCookie = CookieHandler.GetCookie(cookieName);
 
             if (favoritesCookie == null) {
                 return new NameValueCollection();
@@ -44,14 +44,16 @@ namespace LuckyArmory.Lib.Handlers {
         public static void SaveNewFavorite(string realm, string name) {
             string newValue = ApplicationSettings.FavoritesQueryString(realm, name);
             newValue = HttpUtility.UrlEncode(newValue);
-            
+
             string newKey = name + " of " + realm;
             newKey = HttpUtility.UrlEncode(newKey);
 
-            CookieHandler.AddFavorite(newKey, newValue);
+            CookieHandler.AppendPair(cookieName, newKey, newValue);
         }
 
         #endregion Save Favorite
+
+        private static string cookieName = ApplicationSettings.FavoritesCookie;
 
     }
 

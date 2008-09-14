@@ -1,39 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 
 namespace LuckyArmory.Lib.Handlers {
 
-    internal class CookieHandler {
+    public abstract class CookieHandler {
 
-        private CookieHandler() { }
+        protected CookieHandler() { }
 
-        #region Favorites Cookie Methods
+        protected static HttpCookie GetCookie(string name) {
+            return HttpContext.Current.Request.Cookies[name];
+        }
 
-        public static HttpCookie FavoritesCookie {
-            get {
-                return HttpContext.Current.Request.Cookies[ApplicationSettings.FavoritesCookie];
+        protected static void SaveCookie(HttpCookie cookie) {
+            if (HttpContext.Current.Response.Cookies[cookie.Name] != null) {
+                HttpContext.Current.Response.Cookies.Set(cookie);
+            } else {
+                HttpContext.Current.Response.Cookies.Add(cookie);
             }
         }
 
-        public static void AddFavorite(string key, string value) {
-            HttpCookie favoritesCookie = CookieHandler.FavoritesCookie;
+        protected static void AppendPair(string cookieName, string key, string value) {
+            HttpCookie cookie = GetCookie(cookieName);
 
-            if (favoritesCookie == null) {
-                favoritesCookie = new HttpCookie(ApplicationSettings.FavoritesCookie);
-                favoritesCookie.Values.Add(key, value);
+            if (cookie == null) {
+                cookie = new HttpCookie(cookieName);
+                cookie.Values.Add(key, value);
 
-                HttpContext.Current.Response.Cookies.Add(favoritesCookie);
+                SaveCookie(cookie);
             } else {
-                if (favoritesCookie.Value.Contains(value) == false) {
-                    favoritesCookie.Values.Add(key, value);
-                    HttpContext.Current.Response.Cookies.Set(favoritesCookie);
+                if (cookie.Value.Contains(value) == false) {
+                    cookie.Values.Add(key, value);
+                    SaveCookie(cookie);
                 }
             }
         }
-
-        #endregion Favorites Cookie Methods
 
     }
 
