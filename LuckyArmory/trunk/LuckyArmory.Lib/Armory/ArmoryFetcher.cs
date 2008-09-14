@@ -1,48 +1,17 @@
 using LuckyArmory.Lib.Handlers;
-using System.Net;
-using System.IO;
 using System.Text;
 
-namespace LuckyArmory.Lib.Armory {
+namespace LuckyArmory.Lib.Fetcher {
 
-    public class ArmoryFetcher {
+    public class ArmoryFetcher : XmlFetcher {
 
         private ArmoryFetcher() { }
 
         public static string GetArmoryXml(string name, string realm) {
-            string xml = getXmlFromArmory(name, realm);
+            string requestUri = ApplicationSettings.ArmorySearchUri(getCleanRealmName(realm), name);
+            string xml = getXmlFromArmory(requestUri);
 
             return xml;
-        }
-
-        #region Armory Functions
-
-        private static string getXmlFromArmory(string name, string realm) {
-            HttpWebResponse response = null;
-            Stream stream = null;
-            StreamReader reader = null;
-            try {
-                string requestUri = ApplicationSettings.ArmorySearchUri(getCleanRealmName(realm), name);
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(requestUri);
-
-                request.ContentType = ApplicationSettings.ArmoryContentType;
-                request.UserAgent = ApplicationSettings.ArmoryUserAgent;
-
-                response = (HttpWebResponse)request.GetResponse();
-
-                stream = response.GetResponseStream();
-                reader = new StreamReader(stream);
-
-                return reader.ReadToEnd();
-            } finally {
-                try {
-                    response.Close();
-                    stream.Close();
-                    reader.Close();
-                } catch {
-                    throw;
-                }
-            }
         }
 
         private static string getCleanRealmName(string realm) {
@@ -52,8 +21,6 @@ namespace LuckyArmory.Lib.Armory {
 
             return cleanServer;
         }
-
-        #endregion Armory Functions
 
     }
 }
