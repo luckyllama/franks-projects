@@ -36,8 +36,11 @@
 	</div>
 
 	<div id="BottomContent">
-		<a href="/" class="Button"><span>Home</span></a>
-		<a href="/Home/Settings" class="Button"><span>Settings</span></a>
+        <div class="Seperator"></div>
+        
+		<%= Html.RouteLink("Home", new {controller="Home", action="Index"}, new { @class="Button" } )%>
+		<%= Html.RouteLink("Settings", new {controller="Home", action="Settings"}, new { @class="Button" } )%>
+		<%= Html.RouteLink("About", new {controller="Home", action="About"}, new { @class="Button" } )%>
 	</div>
 </div>
 </body>

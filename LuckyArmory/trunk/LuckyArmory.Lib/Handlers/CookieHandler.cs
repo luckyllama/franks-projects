@@ -36,6 +36,15 @@ namespace LuckyArmory.Lib.Handlers {
             }
         }
 
+
+        protected static void RemovePair(string cookieName, string newKey, string newValue) {
+            HttpCookie cookie = GetCookie(cookieName);
+
+            if (cookie != null) {
+                cookie.Values.Remove(newKey);
+                SaveCookie(cookie);
+            }
+        }
     }
 
 }

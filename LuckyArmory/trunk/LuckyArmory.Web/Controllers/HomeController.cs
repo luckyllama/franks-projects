@@ -40,13 +40,24 @@ namespace LuckyArmory.Web.Controllers {
         }
 
         #endregion Index
-        
+
+        [AcceptVerbs("POST")]
         public ActionResult LookUp(string realm, string name, string favorite) {
             if (string.IsNullOrEmpty(realm) || string.IsNullOrEmpty(name)) {
                 return RedirectToAction("Index", "Home", new { errorMessage = "Realm and Character Name are Required.".UrlEncode() });
             }
 
             return RedirectToAction("General", "Info", new { realm = realm.UrlEncode(), name = name.UrlEncode(), favorite = favorite });
+        }
+
+        public ActionResult Delete(string realm, string name) {
+            if (string.IsNullOrEmpty(realm) || string.IsNullOrEmpty(name)) {
+                return RedirectToAction("Index", "Home");
+            }
+
+            FavoritesHandler.DeleteFavorite(realm, name);
+
+            return RedirectToAction("Index", "Home");
         }
 
         public ActionResult About() {
@@ -60,5 +71,6 @@ namespace LuckyArmory.Web.Controllers {
 
             return View();
         }
+
     }
 }

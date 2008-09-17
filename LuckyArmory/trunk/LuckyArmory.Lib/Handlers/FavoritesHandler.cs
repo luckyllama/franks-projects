@@ -42,16 +42,40 @@ namespace LuckyArmory.Lib.Handlers {
         #region Save Favorite
 
         public static void SaveNewFavorite(string realm, string name) {
-            string newValue = ApplicationSettings.FavoritesQueryString(realm, name);
-            newValue = HttpUtility.UrlEncode(newValue);
-
-            string newKey = name + " of " + realm;
-            newKey = HttpUtility.UrlEncode(newKey);
+            string newKey = getCookiePairKey(realm, name);
+            string newValue = getCookiePairValue(realm, name);
 
             CookieHandler.AppendPair(cookieName, newKey, newValue);
         }
 
         #endregion Save Favorite
+
+        #region Delete Favorite 
+
+        public static void DeleteFavorite(string realm, string name) {
+            string newKey = getCookiePairKey(realm, name);
+            string newValue = getCookiePairValue(realm, name);
+
+            CookieHandler.RemovePair(cookieName, newKey, newValue);
+        }
+
+        #endregion Delete Favorite 
+
+        #region Util
+
+        private static string getCookiePairValue(string realm, string name) {
+            string newValue = ApplicationSettings.FavoritesQueryString(realm, name);
+            newValue = HttpUtility.UrlEncode(newValue);
+            return newValue;
+        }
+
+        private static string getCookiePairKey(string realm, string name) {
+            string newKey = name + " of " + realm;
+            newKey = HttpUtility.UrlEncode(newKey);
+            return newKey;
+        }
+
+        #endregion Util
 
         private static string cookieName = ApplicationSettings.FavoritesCookie;
 

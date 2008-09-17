@@ -196,6 +196,4 @@
 
 <a href="/Info/Gear/<%= HttpUtility.UrlEncode(data.General.Realm) %>/<%= HttpUtility.UrlEncode(data.General.Name) %>" class="Button"><span>Gear</span></a>
 
-<div class="Seperator"></div>
-
 </asp:Content>

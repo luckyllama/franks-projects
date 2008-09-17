@@ -36,6 +36,10 @@ namespace LuckyArmory.Web {
                 new { controller = "Info", action = "Item", id = "-1" }
                 );
 
+            routes.Add(new Route("{controler}" + appendedController + "/{action}/{realm}/{name}",
+                new RouteValueDictionary(new { controller = "Home", action = "Index", realm = "realm", name = "name" }),
+                new MvcRouteHandler()));
+
             routes.Add(new Route("{controler}" + appendedController + "/{action}",
                 new RouteValueDictionary (new { controller = "Home", action = "Index" }),
                 new MvcRouteHandler()));

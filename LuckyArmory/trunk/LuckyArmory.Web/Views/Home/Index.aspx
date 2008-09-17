@@ -11,14 +11,14 @@
         <ItemTemplate>
             <div class="FavoriteRow">
                 <span class="Left"><a href="/Info/General<%# DataBinder.Eval(Container, "DataItem.Value") %>"><%# DataBinder.Eval(Container, "DataItem.Key") %></a></span>
-                <span class="Right"><a href="#" class="DeleteIcon"></a></span>
+                <span class="Right"><a href="/Home/Delete<%# DataBinder.Eval(Container, "DataItem.Value") %>" class="DeleteIcon" onclick="return confirm('Are you sure you want to delete this favorite character?');"></a></span>
                 <div class="cleaner"></div>
             </div>
         </ItemTemplate>
         <AlternatingItemTemplate>
             <div class="FavoriteRow Alt">
                 <span class="Left"><a href="/Info/General<%# DataBinder.Eval(Container, "DataItem.Value") %>"><%# DataBinder.Eval(Container, "DataItem.Key") %></a></span>
-                <span class="Right"><a href="#" class="DeleteIcon"></a></span>
+                <span class="Right"><a href="/Home/Delete<%# DataBinder.Eval(Container, "DataItem.Value") %>" class="DeleteIcon" onclick="return confirm('Are you sure you want to delete this favorite character?');"></a></span>
                 <div class="cleaner"></div>
             </div>
         </AlternatingItemTemplate>
@@ -30,8 +30,8 @@
         <dt class="Header">
             Character Lookup:
         </dt>
-        <dt class="Info">        
-        <form id="LookupForm" action="/Home/LookUp" method="post">
+        <dt class="Info">
+        <form id="LookupForm" action="<%= Url.Action("LookUp", "Home") %>" method="post">
             <div class="FormError">
                 <%= Html.Encode(ViewData["ErrorMessage"]) %>
             </div>
@@ -44,8 +44,7 @@
                 <%= Html.TextBox("Realm") %>
             </div>
             <div class="FormOption">
-                <input type="checkbox" id="Favorite" name="Favorite" checked="checked" value="Save" />
-                <% //Html.CheckBox("Favorite", "", "Save", true) %>
+                //<input type="checkbox" id="Favorite" name="Favorite" checked="checked" value="Save" />
                 <label for="Favorite">Save Character</label>
             </div>
             <div class="FormSubmit">

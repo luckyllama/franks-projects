@@ -115,8 +115,8 @@ div#MainContent {
 
 
 div#TopContent {
-	height: 50px;
-    background: #39482F;
+	height: 66px;
+    background: url(Images/Page-Header.png) no-repeat;
     text-align: center;
 }
 
