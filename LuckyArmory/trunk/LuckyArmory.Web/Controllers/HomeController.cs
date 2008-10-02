@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using LuckyArmory.Lib.Handlers;
@@ -41,13 +40,13 @@ namespace LuckyArmory.Web.Controllers {
 
         #endregion Index
 
-        [AcceptVerbs("POST")]
-        public ActionResult LookUp(string realm, string name, string favorite) {
-            if (string.IsNullOrEmpty(realm) || string.IsNullOrEmpty(name)) {
+        
+        public ActionResult LookUp(string Realm, string Name, string favorite) {
+            if (string.IsNullOrEmpty(Realm) || string.IsNullOrEmpty(Name)) {
                 return RedirectToAction("Index", "Home", new { errorMessage = "Realm and Character Name are Required.".UrlEncode() });
             }
 
-            return RedirectToAction("General", "Info", new { realm = realm.UrlEncode(), name = name.UrlEncode(), favorite = favorite });
+            return RedirectToAction("General", "Info", new { realm = Realm.UrlEncode(), name = Name.UrlEncode(), favorite = favorite });
         }
 
         public ActionResult Delete(string realm, string name) {

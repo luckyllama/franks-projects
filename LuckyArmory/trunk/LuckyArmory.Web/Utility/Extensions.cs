@@ -8,14 +8,14 @@ namespace LuckyArmory {
     public static class StringExtension {
 
         public static string UrlEncode(this string target) {
-            target = HttpUtility.UrlEncode(target);
-
+            //target = HttpUtility.UrlEncodeUnicode(target);
+            
             return target;
         }
 
         public static string UrlDecode(this string target) {
-            target = HttpUtility.UrlDecode(target);
-
+            //target = HttpUtility.UrlDecode(target);
+            
             return target;
         }
 

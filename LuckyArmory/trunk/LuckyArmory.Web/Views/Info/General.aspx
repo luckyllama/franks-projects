@@ -194,6 +194,6 @@
 </div>
 <div class="Seperator"></div>
 
-<a href="/Info/Gear/<%= HttpUtility.UrlEncode(data.General.Realm) %>/<%= HttpUtility.UrlEncode(data.General.Name) %>" class="Button"><span>Gear</span></a>
+<a href="/Info/Gear/<%= data.General.Realm %>/<%= data.General.Name %>" class="Button"><span>Gear</span></a>
 
 </asp:Content>

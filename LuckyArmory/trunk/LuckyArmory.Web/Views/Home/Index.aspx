@@ -37,14 +37,14 @@
             </div>
             <div class="FormItem">
                 <label for="Name">Name:</label>
-                <%= Html.TextBox("Name") %>
+                <input type="text" id="Name" name="Name" />
             </div>
             <div class="FormItem">
                 <label for="Realm">Realm:</label>
-                <%= Html.TextBox("Realm") %>
+                <input type="text" id="Realm" name="Realm" />
             </div>
             <div class="FormOption">
-                //<input type="checkbox" id="Favorite" name="Favorite" checked="checked" value="Save" />
+                <input type="checkbox" id="Favorite" name="Favorite" checked="checked" value="Save" />
                 <label for="Favorite">Save Character</label>
             </div>
             <div class="FormSubmit">
