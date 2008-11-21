@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EarTrainer", "EarTrainer\EarTrainer.csproj", "{7BFEAEE0-74A1-4BC7-9ECE-5F1F521C9D16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EarTrainer.Web", "EarTrainer.Web\EarTrainer.Web.csproj", "{DD0FB3A6-3C9E-4C45-AB25-3A2ED46C351D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EarTrainer.Web.Tests", "EarTrainer.Web.Tests\EarTrainer.Web.Tests.csproj", "{2E4A3D60-D687-4095-9E29-9E7E8910A863}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BFEAEE0-74A1-4BC7-9ECE-5F1F521C9D16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BFEAEE0-74A1-4BC7-9ECE-5F1F521C9D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BFEAEE0-74A1-4BC7-9ECE-5F1F521C9D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BFEAEE0-74A1-4BC7-9ECE-5F1F521C9D16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD0FB3A6-3C9E-4C45-AB25-3A2ED46C351D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD0FB3A6-3C9E-4C45-AB25-3A2ED46C351D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD0FB3A6-3C9E-4C45-AB25-3A2ED46C351D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD0FB3A6-3C9E-4C45-AB25-3A2ED46C351D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E4A3D60-D687-4095-9E29-9E7E8910A863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E4A3D60-D687-4095-9E29-9E7E8910A863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E4A3D60-D687-4095-9E29-9E7E8910A863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E4A3D60-D687-4095-9E29-9E7E8910A863}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
