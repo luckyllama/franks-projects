@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="IkariamTools">
+  <DataContextMoniker Name="/IkariamToolsDataContext" />
+  <nestedChildShapes>
+    <classShape Id="15c57446-c3a8-44c7-8a2d-a95b3fe708b9" absoluteBounds="6.125, 0.875, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/IkariamToolsDataContext/CombatReport" />
+      <nestedChildShapes>
+        <elementListCompartment Id="987cc178-9e5c-469e-973d-c55d43f400d5" absoluteBounds="6.14, 1.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6003e289-9594-4a35-965c-a1306b359c7a" absoluteBounds="6.125, 3.625, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/IkariamToolsDataContext/SpyReport" />
+      <nestedChildShapes>
+        <elementListCompartment Id="19059c52-4f03-4c2c-afae-621f735e6e60" absoluteBounds="6.14, 4.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="86c70ba1-0059-4c6b-a3e4-cf1235717064" absoluteBounds="0.625, 2.375, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/IkariamToolsDataContext/Player" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b46fd3e7-5fa8-4dc9-b829-364f4fc8af4d" absoluteBounds="0.64, 2.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3703b215-bb0a-4839-b1bd-6711eb459dad" absoluteBounds="3.25, 2, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/IkariamToolsDataContext/City" />
+      <nestedChildShapes>
+        <elementListCompartment Id="befbe8fe-89d9-461e-a2a0-05884fd0f982" absoluteBounds="3.265, 2.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.25 : 2.61140055338542); (6.125 : 2.61140055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/IkariamToolsDataContext/City/City1_CombatReport1" />
+      <nodes>
+        <classShapeMoniker Id="3703b215-bb0a-4839-b1bd-6711eb459dad" />
+        <classShapeMoniker Id="15c57446-c3a8-44c7-8a2d-a95b3fe708b9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.25 : 4.17870198567708); (6.125 : 4.17870198567708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/IkariamToolsDataContext/City/City1_SpyReport1" />
+      <nodes>
+        <classShapeMoniker Id="3703b215-bb0a-4839-b1bd-6711eb459dad" />
+        <classShapeMoniker Id="6003e289-9594-4a35-965c-a1306b359c7a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.625 : 3.35659912109375); (3.25 : 3.35659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/IkariamToolsDataContext/Player/Player1_City1" />
+      <nodes>
+        <classShapeMoniker Id="86c70ba1-0059-4c6b-a3e4-cf1235717064" />
+        <classShapeMoniker Id="3703b215-bb0a-4839-b1bd-6711eb459dad" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

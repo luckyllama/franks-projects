@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IkariamTools.Web", "IkariamTools\IkariamTools.Web.csproj", "{36557ADA-D9C8-4566-9ABC-A5C5D534DC96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IkariamTools.Tests", "IkariamTools.Tests\IkariamTools.Tests.csproj", "{79E7A241-00DF-46FA-BD5C-BAE609C29648}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IkariamTools.Data", "IkariamTools.Data\IkariamTools.Data.csproj", "{972FF248-47EF-4E35-88C0-59FE2A1B91C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IkariamTools.LinqToSql", "IkariamTools.LinqToSql\IkariamTools.LinqToSql.csproj", "{EABEB3E3-6A42-465F-9E67-710A9F7A64A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36557ADA-D9C8-4566-9ABC-A5C5D534DC96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36557ADA-D9C8-4566-9ABC-A5C5D534DC96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36557ADA-D9C8-4566-9ABC-A5C5D534DC96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36557ADA-D9C8-4566-9ABC-A5C5D534DC96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79E7A241-00DF-46FA-BD5C-BAE609C29648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E7A241-00DF-46FA-BD5C-BAE609C29648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E7A241-00DF-46FA-BD5C-BAE609C29648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79E7A241-00DF-46FA-BD5C-BAE609C29648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{972FF248-47EF-4E35-88C0-59FE2A1B91C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{972FF248-47EF-4E35-88C0-59FE2A1B91C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{972FF248-47EF-4E35-88C0-59FE2A1B91C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{972FF248-47EF-4E35-88C0-59FE2A1B91C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EABEB3E3-6A42-465F-9E67-710A9F7A64A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EABEB3E3-6A42-465F-9E67-710A9F7A64A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EABEB3E3-6A42-465F-9E67-710A9F7A64A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EABEB3E3-6A42-465F-9E67-710A9F7A64A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

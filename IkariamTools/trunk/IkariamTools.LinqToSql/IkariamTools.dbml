@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="ikariam" Class="IkariamToolsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.CombatReports" Member="CombatReports">
+    <Type Name="CombatReport">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CityId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WoodLooted" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WineLooted" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MarbleLooted" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CrystalLooted" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SulphurLooted" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="City1_CombatReport1" Member="City" ThisKey="CityId" OtherKey="Id" Type="City" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SpyReports" Member="SpyReports">
+    <Type Name="SpyReport">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CityId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WoodQuantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WineQuantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MarbleQuantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CrystalQuantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SulphurQuantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="City1_SpyReport1" Member="City" ThisKey="CityId" OtherKey="Id" Type="City" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Players" Member="Players">
+    <Type Name="Player">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PlayerName" Type="System.String" DbType="VarChar(55) NOT NULL" CanBeNull="false" />
+      <Column Name="TotalScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MilitaryScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Player1_City1" Member="Cities" ThisKey="Id" OtherKey="PlayerId" Type="City" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cities" Member="Cities">
+    <Type Name="City">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CityName" Type="System.String" DbType="VarChar(55) NOT NULL" CanBeNull="false" />
+      <Column Name="PlayerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="X" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Y" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="ResourceType" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Size" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Wall" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Warehouse" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="IsCapital" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="City1_CombatReport1" Member="CombatReports" ThisKey="Id" OtherKey="CityId" Type="CombatReport" />
+      <Association Name="City1_SpyReport1" Member="SpyReports" ThisKey="Id" OtherKey="CityId" Type="SpyReport" />
+      <Association Name="Player1_City1" Member="Player" ThisKey="PlayerId" OtherKey="Id" Type="Player" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
