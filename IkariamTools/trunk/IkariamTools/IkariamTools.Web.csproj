@@ -68,10 +68,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\Icon-City.png" />
     <Content Include="Content\Images\Icon-Crystal.png" />
     <Content Include="Content\Images\Icon-Hidehouse.png" />
     <Content Include="Content\Images\Icon-Marble.png" />
     <Content Include="Content\Images\Icon-Palace.png" />
+    <Content Include="Content\Images\Icon-Resources.png" />
     <Content Include="Content\Images\Icon-Sulphur.png" />
     <Content Include="Content\Images\Icon-Sword.png" />
     <Content Include="Content\Images\Icon-Time.gif" />
@@ -82,6 +84,8 @@
     <Content Include="Content\Images\Icon-Wood.png" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\Cities.js" />
+    <Content Include="Views\City\Create.ascx" />
     <Content Include="Views\City\List.aspx" />
     <Content Include="Views\Players\List.aspx" />
     <Content Include="Web.config" />

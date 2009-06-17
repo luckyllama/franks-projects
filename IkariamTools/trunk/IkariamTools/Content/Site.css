@@ -340,8 +340,8 @@ div#title
 	height: 10px;
 	padding-left: 15px;
 }
-td .Wood, td .Wine, td .Marble, td .Crystal, td .Sulphur {
-	display: block;
+td span.Wood, td span.Wine, td span.Marble, td span.Crystal, td span.Sulphur {
+	display: inline-block;
 	text-indent: -9999px;
 }
 .Wood {
@@ -386,7 +386,17 @@ td .Wood, td .Wine, td .Marble, td .Crystal, td .Sulphur {
 	color: #fff;
 	text-align: center;
 }
-
+.CitiesTable .CityMoreDetails,
+.CitiesTable .CityNotes,
+.CitiesTable .CityMoreDetails .SpyReport {
+	display: none;
+}
+.CitiesTable .CityMoreDetails .SpyReportsSelect {
+	float: left;
+}
+.CitiesTable .CityMoreDetails .SpyReport {
+	float: left;
+}
 .CitiesTable .LootableResourceQuantity, .CitiesTable .LootableResourcesQuantity {
 	text-align: right;
 }
@@ -402,4 +412,8 @@ td .Wood, td .Wine, td .Marble, td .Crystal, td .Sulphur {
 }
 .CitiesTable .CityAlternateRow .ResourceAlternateColumn {
 	background-color: #BFDEFF;
+}
+
+.Clear {
+	clear: both;
 }
