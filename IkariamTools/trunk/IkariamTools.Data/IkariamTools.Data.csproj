@@ -55,6 +55,7 @@
     <Compile Include="Repositories\ICombatReportRepository.cs" />
     <Compile Include="Repositories\IPlayerRepository.cs" />
     <Compile Include="Repositories\ISpyReportRepository.cs" />
+    <Compile Include="Utility\ICityExtensions.cs" />
     <Compile Include="Utility\SpyReportUtility.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
