@@ -10,7 +10,7 @@
       <Column Name="CrystalLooted" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="SulphurLooted" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Association Name="City1_CombatReport1" Member="City" ThisKey="CityId" OtherKey="Id" Type="City" IsForeignKey="true" />
+      <Association Name="City1_CombatReport" Member="City" ThisKey="CityId" OtherKey="Id" Type="City" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.SpyReports" Member="SpyReports">
@@ -23,7 +23,7 @@
       <Column Name="CrystalQuantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="SulphurQuantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Association Name="City1_SpyReport1" Member="City" ThisKey="CityId" OtherKey="Id" Type="City" IsForeignKey="true" />
+      <Association Name="City1_SpyReport" Member="City" ThisKey="CityId" OtherKey="Id" Type="City" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Players" Member="Players">
@@ -34,7 +34,7 @@
       <Column Name="MilitaryScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Player1_City1" Member="Cities" ThisKey="Id" OtherKey="PlayerId" Type="City" />
+      <Association Name="Player_City1" Member="Cities" ThisKey="Id" OtherKey="PlayerId" Type="City" />
     </Type>
   </Table>
   <Table Name="dbo.Cities" Member="Cities">
@@ -49,9 +49,16 @@
       <Column Name="Wall" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
       <Column Name="Warehouse" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
       <Column Name="IsCapital" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Association Name="City1_CombatReport1" Member="CombatReports" ThisKey="Id" OtherKey="CityId" Type="CombatReport" />
-      <Association Name="City1_SpyReport1" Member="SpyReports" ThisKey="Id" OtherKey="CityId" Type="SpyReport" />
-      <Association Name="Player1_City1" Member="Player" ThisKey="PlayerId" OtherKey="Id" Type="Player" IsForeignKey="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DeltaWood" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeltaWine" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeltaMarble" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeltaCrystal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeltaSulphur" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IkariamId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="City1_CombatReport" Member="CombatReports" ThisKey="Id" OtherKey="CityId" Type="CombatReport" />
+      <Association Name="City1_SpyReport" Member="SpyReports" ThisKey="Id" OtherKey="CityId" Type="SpyReport" />
+      <Association Name="Player_City1" Member="Player" ThisKey="PlayerId" OtherKey="Id" Type="Player" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>

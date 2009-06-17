@@ -317,7 +317,7 @@ namespace IkariamTools.LinqToSql
 			}
 		}
 		
-		[Association(Name="City1_CombatReport1", Storage="_City", ThisKey="CityId", OtherKey="Id", IsForeignKey=true)]
+		[Association(Name="City1_CombatReport", Storage="_City", ThisKey="CityId", OtherKey="Id", IsForeignKey=true)]
 		public City City
 		{
 			get
@@ -588,7 +588,7 @@ namespace IkariamTools.LinqToSql
 			}
 		}
 		
-		[Association(Name="City1_SpyReport1", Storage="_City", ThisKey="CityId", OtherKey="Id", IsForeignKey=true)]
+		[Association(Name="City1_SpyReport", Storage="_City", ThisKey="CityId", OtherKey="Id", IsForeignKey=true)]
 		public City City
 		{
 			get
@@ -807,7 +807,7 @@ namespace IkariamTools.LinqToSql
 			}
 		}
 		
-		[Association(Name="Player1_City1", Storage="_Cities", ThisKey="Id", OtherKey="PlayerId")]
+		[Association(Name="Player_City1", Storage="_Cities", ThisKey="Id", OtherKey="PlayerId")]
 		public EntitySet<City> Cities
 		{
 			get
@@ -879,6 +879,20 @@ namespace IkariamTools.LinqToSql
 		
 		private System.Nullable<bool> _IsCapital;
 		
+		private string _Notes;
+		
+		private System.Nullable<int> _DeltaWood;
+		
+		private System.Nullable<int> _DeltaWine;
+		
+		private System.Nullable<int> _DeltaMarble;
+		
+		private System.Nullable<int> _DeltaCrystal;
+		
+		private System.Nullable<int> _DeltaSulphur;
+		
+		private System.Nullable<int> _IkariamId;
+		
 		private EntitySet<CombatReport> _CombatReports;
 		
 		private EntitySet<SpyReport> _SpyReports;
@@ -909,6 +923,20 @@ namespace IkariamTools.LinqToSql
     partial void OnWarehouseChanged();
     partial void OnIsCapitalChanging(System.Nullable<bool> value);
     partial void OnIsCapitalChanged();
+    partial void OnNotesChanging(string value);
+    partial void OnNotesChanged();
+    partial void OnDeltaWoodChanging(System.Nullable<int> value);
+    partial void OnDeltaWoodChanged();
+    partial void OnDeltaWineChanging(System.Nullable<int> value);
+    partial void OnDeltaWineChanged();
+    partial void OnDeltaMarbleChanging(System.Nullable<int> value);
+    partial void OnDeltaMarbleChanged();
+    partial void OnDeltaCrystalChanging(System.Nullable<int> value);
+    partial void OnDeltaCrystalChanged();
+    partial void OnDeltaSulphurChanging(System.Nullable<int> value);
+    partial void OnDeltaSulphurChanged();
+    partial void OnIkariamIdChanging(System.Nullable<int> value);
+    partial void OnIkariamIdChanged();
     #endregion
 		
 		public City()
@@ -1123,7 +1151,147 @@ namespace IkariamTools.LinqToSql
 			}
 		}
 		
-		[Association(Name="City1_CombatReport1", Storage="_CombatReports", ThisKey="Id", OtherKey="CityId")]
+		[Column(Storage="_Notes", DbType="VarChar(MAX)")]
+		public string Notes
+		{
+			get
+			{
+				return this._Notes;
+			}
+			set
+			{
+				if ((this._Notes != value))
+				{
+					this.OnNotesChanging(value);
+					this.SendPropertyChanging();
+					this._Notes = value;
+					this.SendPropertyChanged("Notes");
+					this.OnNotesChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_DeltaWood", DbType="Int")]
+		public System.Nullable<int> DeltaWood
+		{
+			get
+			{
+				return this._DeltaWood;
+			}
+			set
+			{
+				if ((this._DeltaWood != value))
+				{
+					this.OnDeltaWoodChanging(value);
+					this.SendPropertyChanging();
+					this._DeltaWood = value;
+					this.SendPropertyChanged("DeltaWood");
+					this.OnDeltaWoodChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_DeltaWine", DbType="Int")]
+		public System.Nullable<int> DeltaWine
+		{
+			get
+			{
+				return this._DeltaWine;
+			}
+			set
+			{
+				if ((this._DeltaWine != value))
+				{
+					this.OnDeltaWineChanging(value);
+					this.SendPropertyChanging();
+					this._DeltaWine = value;
+					this.SendPropertyChanged("DeltaWine");
+					this.OnDeltaWineChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_DeltaMarble", DbType="Int")]
+		public System.Nullable<int> DeltaMarble
+		{
+			get
+			{
+				return this._DeltaMarble;
+			}
+			set
+			{
+				if ((this._DeltaMarble != value))
+				{
+					this.OnDeltaMarbleChanging(value);
+					this.SendPropertyChanging();
+					this._DeltaMarble = value;
+					this.SendPropertyChanged("DeltaMarble");
+					this.OnDeltaMarbleChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_DeltaCrystal", DbType="Int")]
+		public System.Nullable<int> DeltaCrystal
+		{
+			get
+			{
+				return this._DeltaCrystal;
+			}
+			set
+			{
+				if ((this._DeltaCrystal != value))
+				{
+					this.OnDeltaCrystalChanging(value);
+					this.SendPropertyChanging();
+					this._DeltaCrystal = value;
+					this.SendPropertyChanged("DeltaCrystal");
+					this.OnDeltaCrystalChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_DeltaSulphur", DbType="Int")]
+		public System.Nullable<int> DeltaSulphur
+		{
+			get
+			{
+				return this._DeltaSulphur;
+			}
+			set
+			{
+				if ((this._DeltaSulphur != value))
+				{
+					this.OnDeltaSulphurChanging(value);
+					this.SendPropertyChanging();
+					this._DeltaSulphur = value;
+					this.SendPropertyChanged("DeltaSulphur");
+					this.OnDeltaSulphurChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_IkariamId", DbType="Int")]
+		public System.Nullable<int> IkariamId
+		{
+			get
+			{
+				return this._IkariamId;
+			}
+			set
+			{
+				if ((this._IkariamId != value))
+				{
+					this.OnIkariamIdChanging(value);
+					this.SendPropertyChanging();
+					this._IkariamId = value;
+					this.SendPropertyChanged("IkariamId");
+					this.OnIkariamIdChanged();
+				}
+			}
+		}
+		
+		[Association(Name="City1_CombatReport", Storage="_CombatReports", ThisKey="Id", OtherKey="CityId")]
 		public EntitySet<CombatReport> CombatReports
 		{
 			get
@@ -1136,7 +1304,7 @@ namespace IkariamTools.LinqToSql
 			}
 		}
 		
-		[Association(Name="City1_SpyReport1", Storage="_SpyReports", ThisKey="Id", OtherKey="CityId")]
+		[Association(Name="City1_SpyReport", Storage="_SpyReports", ThisKey="Id", OtherKey="CityId")]
 		public EntitySet<SpyReport> SpyReports
 		{
 			get
@@ -1149,7 +1317,7 @@ namespace IkariamTools.LinqToSql
 			}
 		}
 		
-		[Association(Name="Player1_City1", Storage="_Player", ThisKey="PlayerId", OtherKey="Id", IsForeignKey=true)]
+		[Association(Name="Player_City1", Storage="_Player", ThisKey="PlayerId", OtherKey="Id", IsForeignKey=true)]
 		public Player Player
 		{
 			get
