@@ -63,7 +63,7 @@ namespace SilverlightTestBed {
         #endregion Constructor & Initialization
 
         private void LayoutRoot_MouseMove(object sender, MouseEventArgs e) {
-            BitmapImage image = new BitmapImage(new Uri("whole-note.png", UriKind.Relative));
+            BitmapImage image = new BitmapImage(new Uri("Images/whole-note.png", UriKind.Relative));
             Note.Source = image;
             Note.Height = lineHeight;
             Point position = e.GetPosition(null);
