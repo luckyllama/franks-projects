@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="SilverlightTestBed.StaffUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="480"
+    MinHeight="100" MinWidth="200">
+
+    <Canvas x:Name="LayoutRoot" Background="White" 
+            Loaded="LayoutRoot_Loaded" 
+            MouseMove="LayoutRoot_MouseMove">
+        <Rectangle x:Name="StaffRectangle"
+                Canvas.Top="0" 
+                Canvas.Left="0" 
+                Fill="Transparent" 
+                Cursor="None"
+                MouseLeave="StaffRectangle_MouseLeave">
+        </Rectangle>
+
+        <Line x:Name="Line_Top3Above" />
+        <Line x:Name="Line_Top2Above" />
+        <Line x:Name="Line_Top1Above" />
+        <Line x:Name="Line_Top" />
+        <Line x:Name="Line_TopMiddle" />
+        <Line x:Name="Line_Middle" />
+        <Line x:Name="Line_BottomMiddle" />
+        <Line x:Name="Line_Bottom" />
+        <Line x:Name="Line_Bottom1Below" />
+        <Line x:Name="Line_Bottom2Below" />
+        <Line x:Name="Line_Bottom3Below" />
+
+        <Image x:Name="Note" Cursor="None" />
+    </Canvas>
+</UserControl>
