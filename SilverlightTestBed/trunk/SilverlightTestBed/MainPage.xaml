@@ -8,8 +8,6 @@
     <Canvas Background="Red">
         <Button Height="25" x:Name="test" Content="test2?"></Button>
         <SilverlightTestBed:StaffUserControl 
-            x:Name="Staff" 
-            Width="450"
-            Height="180" />
+            x:Name="Staff" Clef="Bass" />
     </Canvas>
 </UserControl>

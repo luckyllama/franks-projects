@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.20506</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{12F93FBE-7D0B-44BE-8FDF-6D3839206BD9}</ProjectGuid>
     <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -88,6 +88,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Clef\BassClef.cs" />
+    <Compile Include="Classes\Clef\ClefType.cs" />
+    <Compile Include="Classes\Clef\IClef.cs" />
+    <Compile Include="Classes\Clef\TrebleClef.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -120,9 +124,6 @@
     <None Include="Properties\AppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\whole-note.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1</ProductName>
@@ -133,6 +134,20 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Content\Images\Notes\16th-note.png" />
+    <Resource Include="Content\Images\Notes\32nd-note.png" />
+    <Resource Include="Content\Images\Notes\4th-note.png" />
+    <Resource Include="Content\Images\Notes\8th-note.png" />
+    <Resource Include="Content\Images\Clef\alto-clef.png" />
+    <Resource Include="Content\Images\Clef\bass-clef.png" />
+    <Resource Include="Content\Images\Notes\half-note.png" />
+    <Resource Include="Content\Images\Clef\treble-clef.png" />
+    <Resource Include="Content\Images\Notes\whole-note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

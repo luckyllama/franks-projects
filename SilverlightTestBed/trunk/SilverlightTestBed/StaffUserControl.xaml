@@ -4,7 +4,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="480"
-    MinHeight="100" MinWidth="200">
+    Width="450" Height="180">
 
     <Canvas x:Name="LayoutRoot" Background="White" 
             Loaded="LayoutRoot_Loaded" 

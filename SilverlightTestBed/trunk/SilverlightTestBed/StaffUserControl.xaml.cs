@@ -10,12 +10,10 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using System.Windows.Media.Imaging;
+using SilverlightTestBed.Clef;
 
 namespace SilverlightTestBed {
     public partial class StaffUserControl : UserControl {
-        private static int TOP_BOTTOM_PADDING = 10;
-        private static int NUMBER_OF_LINES = 11;
-        private int lineHeight;
 
         #region Constructor & Initialization
 
@@ -30,6 +28,10 @@ namespace SilverlightTestBed {
         private void InitializeUserControl() {
             lineHeight = (int)((this.Height - (TOP_BOTTOM_PADDING * 2)) / NUMBER_OF_LINES);
             setupStaffLines();
+
+            if (Clef != null) {
+                setupClef();
+            }
 
             StaffRectangle.Width = this.Width;
             StaffRectangle.Height = this.Height;
@@ -60,10 +62,35 @@ namespace SilverlightTestBed {
             line.Y2 = lineY;
         }
 
+        private void setupClef() {
+            IClef clef;
+            switch (Clef) {
+                case ClefType.Treble :
+                    clef = new TrebleClef();
+                    break;
+                case ClefType.Bass :
+                    clef = new BassClef();
+                    break;
+                default :
+                    clef = null;
+                    break;
+            }
+
+            if (clef != null) {
+                Image clefImage = clef.GetClefImage(lineHeight);
+                double topProperty = Line_Top.Y1 + clef.GetClefTopPosition(lineHeight);
+                clefImage.SetValue(Canvas.TopProperty, topProperty);
+                clefImage.SetValue(Canvas.LeftProperty, 10.0);
+                LayoutRoot.Children.Add(clefImage);
+            }
+        }
+
         #endregion Constructor & Initialization
 
+        #region Events 
+
         private void LayoutRoot_MouseMove(object sender, MouseEventArgs e) {
-            BitmapImage image = new BitmapImage(new Uri("Content/Images/whole-note.png", UriKind.Relative));
+            BitmapImage image = new BitmapImage(new Uri("Content/Images/Notes/whole-note.png", UriKind.Relative));
             Note.Source = image;
             Note.Height = lineHeight;
             Point position = e.GetPosition(null);
@@ -78,5 +105,18 @@ namespace SilverlightTestBed {
         private void StaffRectangle_MouseLeave(object sender, MouseEventArgs e) {
 
         }
+
+        #endregion Events
+
+        #region Properties & Fields 
+
+        private static int TOP_BOTTOM_PADDING = 10;
+        private static int NUMBER_OF_LINES = 11;
+        private int lineHeight;
+
+        public ClefType Clef { get; set; }
+
+
+        #endregion Properties & Fields
     }
 }

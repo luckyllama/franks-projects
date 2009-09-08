@@ -8,6 +8,7 @@
     <ErrorReportUrlHistory />
     <FallbackCulture>en-US</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
@@ -28,6 +29,9 @@
           <StartWorkingDirectory>
           </StartWorkingDirectory>
           <ShowWebRefOnDebugPrompt>True</ShowWebRefOnDebugPrompt>
+          <OutOfBrowserProjectToDebug>
+          </OutOfBrowserProjectToDebug>
+          <ShowRiaSvcsOnDebugPrompt>True</ShowRiaSvcsOnDebugPrompt>
         </SilverlightProjectProperties>
       </FlavorProperties>
     </VisualStudio>
