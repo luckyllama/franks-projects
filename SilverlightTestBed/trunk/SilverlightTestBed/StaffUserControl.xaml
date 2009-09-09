@@ -8,27 +8,36 @@
 
     <Canvas x:Name="LayoutRoot" Background="White" 
             Loaded="LayoutRoot_Loaded" 
-            MouseMove="LayoutRoot_MouseMove">
+            MouseEnter="LayoutRoot_MouseEnter"
+            MouseMove="LayoutRoot_MouseMove"
+            MouseLeave="LayoutRoot_MouseLeave">
         <Rectangle x:Name="StaffRectangle"
                 Canvas.Top="0" 
                 Canvas.Left="0" 
                 Fill="Transparent" 
-                Cursor="None"
-                MouseLeave="StaffRectangle_MouseLeave">
-        </Rectangle>
+                Cursor="None" />
 
-        <Line x:Name="Line_Top3Above" />
-        <Line x:Name="Line_Top2Above" />
-        <Line x:Name="Line_Top1Above" />
+        <Rectangle x:Name="EditableArea" 
+                   Canvas.Top="0" 
+                   Canvas.Left="0"
+                   Width="450"
+                   Height="180"
+                   Fill="#EFEFEF"
+                   Visibility="Collapsed"
+                   />
+
+        <Line x:Name="Line_Top3Above" Visibility="Collapsed" />
+        <Line x:Name="Line_Top2Above" Visibility="Collapsed" />
+        <Line x:Name="Line_Top1Above" Visibility="Collapsed" />
         <Line x:Name="Line_Top" />
         <Line x:Name="Line_TopMiddle" />
         <Line x:Name="Line_Middle" />
         <Line x:Name="Line_BottomMiddle" />
         <Line x:Name="Line_Bottom" />
-        <Line x:Name="Line_Bottom1Below" />
-        <Line x:Name="Line_Bottom2Below" />
-        <Line x:Name="Line_Bottom3Below" />
-
+        <Line x:Name="Line_Bottom1Below" Visibility="Collapsed" />
+        <Line x:Name="Line_Bottom2Below" Visibility="Collapsed" />
+        <Line x:Name="Line_Bottom3Below" Visibility="Collapsed" />
+        
         <Image x:Name="Note" Cursor="None" />
     </Canvas>
 </UserControl>

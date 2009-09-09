@@ -92,6 +92,12 @@
     <Compile Include="Classes\Clef\ClefType.cs" />
     <Compile Include="Classes\Clef\IClef.cs" />
     <Compile Include="Classes\Clef\TrebleClef.cs" />
+    <Compile Include="Classes\KeySignature.cs" />
+    <Compile Include="Classes\NotePitch.cs" />
+    <Compile Include="Classes\Notes\NoteOptions.cs" />
+    <Compile Include="Classes\Notes\NoteType.cs" />
+    <Compile Include="Classes\StaffPosition.cs" />
+    <Compile Include="Classes\TimeSignature.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
