@@ -1,0 +1,353 @@
+﻿
+/*----------------------------------------------------------
+ * Colors: 
+ * Dark Gray - #444
+ * Red - #901808
+ * Green - #55a41c
+ *--------------------------------------------------------*/
+
+/*----------------------------------------------------------
+ * Typography
+ *--------------------------------------------------------*/
+body {
+	font-family: Helvetica, Verdana, Sans-Serif;
+}
+
+/*----------------------------------------------------------
+ * Basic Elements
+ *--------------------------------------------------------*/
+body {
+	color: #444;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a:link {
+	color: #034af3;
+	text-decoration: underline;
+}
+a:visited {
+	color: #505abc;
+}
+a:hover {
+	color: #1d60ff;
+	text-decoration: none;
+}
+a:active {
+	color: #12eb87;
+}
+
+/*----------------------------------------------------------
+ * Layout Elements
+ *--------------------------------------------------------*/
+
+#Page {
+	height: 100%;
+	margin: 0 auto;	
+	width: 980px;
+}
+
+#Header { 
+	background: #2a2a2a;
+	height: 75px;
+	margin: 0 auto;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+#Header h1 {
+	background: url(images/Logo.png) no-repeat left top;
+	height: 75px;
+	margin: 0;
+	padding: 0;
+	text-indent: -9999px;
+}
+#Header #LoginDisplay {
+	float: right;
+}
+
+#MenuContainer {
+	float: left;
+	margin-top: 95px;
+	width: 180px;
+}
+ul#Menu {
+	margin: 0;
+	padding: 3px 15px;
+}
+ul#Menu li {
+	list-style: none;
+}
+ul#Menu li a {
+	background: #ccc;
+	display: block;
+	padding: 6px 15px;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 2.0em;
+	color: #444;
+}
+ul#Menu li a:hover {
+	background-color: #fff;
+	color: #444;
+	text-decoration: none;
+}
+ul#Menu li a:active {
+	background-color: #eee;
+	text-decoration: none;
+}
+ul#Menu li.selected a {
+	background-color: #fff;
+	color: #000;
+}
+
+#Main {
+	float: right;
+	margin-top: 95px;
+	padding: 0 8px;
+	width: 780px;
+}
+
+#Footer {
+	clear: both;
+	color: #999;
+	padding: 10px 0;
+	text-align: center;
+	line-height: normal;
+	margin: 0;
+	font-size: .9em;
+}
+
+/*----------------------------------------------------------
+ * Login Form 
+ *--------------------------------------------------------*/
+#LoginDisplay {
+	color: #fff;
+	font-size: .9em;
+	height: 40px;
+	position: relative;
+	width: 100%;
+	z-index: 100;
+}
+
+#LoginDisplay #LoginFormsContainer {
+	background: #2a2a2a;
+	display: none;
+	height: 185px;
+	text-align: left;
+}
+#LoginFormsContent {
+	margin: 0 auto;	
+	width: 980px;
+}
+#LoginFormsContent fieldset {
+	float: right;
+	margin: 0;
+	padding: 0 25px;
+	width: 430px;
+}
+#LoginFormsContent fieldset legend {
+	color: #fff;
+}
+#LoginFormsContent fieldset div {
+	clear: both;
+	margin: 6px 0;
+}
+#LoginFormsContent .FormItem label {
+	display: inline-block;
+	width: 120px;
+}
+#LoginFormsContent .FormItem input {
+	background: #414141;
+	border: 1px solid #1a1a1a;
+	color: #fff;
+	display: inline-block;
+	width: 300px;
+}
+#LoginFormsContent .FormItem input:focus {
+	background: #515151;
+}
+#LoginFormsContent .FormCheckBox input {
+	width: auto;
+}
+#LoginFormsContent fieldset#LoginPanel {
+	border: 0;
+	border-right: 1px solid #666;
+}
+#LoginFormsContent fieldset#RegisterPanel {
+	border: 0;
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+}
+
+#LoginTabs {
+	background: transparent;
+	height: 40px;
+}
+#LoginTabs ul#Tabs {
+	background: #2a2a2a;
+	float: right;
+	margin: 0;
+}
+#LoginTabs ul#Tabs li {
+	display: block;
+	float: left;
+	list-style: none;
+	padding: 8px 16px;
+}
+
+#LoginTabs #LoginHideFormButton {
+	display: none;
+}
+#LoginTabs .TabToggleButton {
+	background: #2a2a2a;
+	float: right;
+	margin: 0 10px;
+}
+
+/*----------------------------------------------------------
+ * WikiPage Elements
+ *--------------------------------------------------------*/
+
+#PageInformation {
+	margin: .8em 0;
+}
+#PageInformation h1 {
+	font-size: 1.5em;
+	margin: 0;
+	padding-bottom: .2em;
+	border-bottom: 2px solid #444;
+}
+#PageInformation .PageActions {
+	float: right;
+	position: relative;
+	top: -25px;
+}
+
+#PageEditDetails {
+	font-size: 80%;
+	padding: 2px 0;
+}
+#PageEditDetails div {
+	display: inline;
+}
+
+#PageCreationInfo {
+	padding-right: 15px;
+}
+
+/*----------------------------------------------------------
+ * Form Elements
+ *--------------------------------------------------------*/
+
+fieldset {
+	margin: 1em 0;
+	padding: 1em;
+	border: 1px solid #CCC;
+}
+
+fieldset p {
+	margin: 2px 12px 10px 10px;
+}
+
+fieldset label {
+	display: block;
+}
+
+fieldset label.inline {
+	display: inline;
+}
+
+legend {
+	font-size: 1.1em;
+	font-weight: 600;
+	padding: 2px 4px 8px 4px;
+}
+
+.FormItem input, 
+.FormItem textarea {
+	border: 1px solid #999;
+	width: 100%;
+}
+fieldset .PageTitle input {
+	font-size: 1.38em;
+}
+fieldset .PageContent textarea { }
+
+.field-validation-error {
+	color: #f00;
+}
+.input-validation-error {
+	border: 1px solid #f00;
+	background-color: #fee;
+}
+.validation-summary-errors {
+	font-weight: bold;
+	color: #f00;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+
+table {
+	border: solid 1px #e8eef4;
+	border-collapse: collapse;
+}
+
+table td {
+	padding: 5px;
+	border: solid 1px #e8eef4;
+}
+
+table th {
+	padding: 6px 5px;
+	text-align: left;
+	background-color: #e8eef4;
+	border: solid 1px #e8eef4;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+	clear: both;
+}
+
+.error {
+	color: Red;
+}
+
+#menucontainer {
+	margin-top: 40px;
+}
+
+div#title {
+	display: block;
+	float: left;
+	text-align: left;
+}
+
+#logindisplay {
+	font-size: 1.1em;
+	display: block;
+	text-align: right;
+	margin: 10px;
+	color: White;
+}
+
+#logindisplay a:link {
+	color: #444;
+	text-decoration: underline;
+}
+
+#logindisplay a:visited {
+	color: #444;
+	text-decoration: underline;
+}
+
+#logindisplay a:hover {
+	color: #444;
+	text-decoration: none;
+}

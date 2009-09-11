@@ -1,0 +1,38 @@
+﻿
+=== Current Priority Features ===
+Basic Edit/Create Pages
+Basic, Custom Authenticaion - users & user pages
+Admin - Manage Users
+Unit tests 
+Default theme
+
+=== v0.4 ===
+Roles - page security, admin roles
+Wiki Markup - Implement some kind of wiki markup
+
+=== v0.5 ===
+Page Parents - for when you want something stronger than a 'tag'
+Tags - Like categories; associate a page with an idea; allow tag pages to view all the pages assoicated with a tag
+
+=== v0.6 ===
+Page discussion / comments - allow discussion on the contents of a page
+Reports - Things like most popular pages, most active users, etc.
+
+=== v0.7 ===
+Templates - Allow a template of wiki code to be inserted into a page; common text like a project template
+Includes - Allow a page to include another page into it (things like "stubs" or "warning" snippits)
+
+=== v0.8 ===
+RSS Feeds - allow users to follow certain pages and email them when things change 
+Page State - be able to mark a page as several, user-configurable states (like 'inaccurate' or 'out-of-date')
+
+=== v0.9 ===
+Require logins - Allow the option to requie logins to edit pages, etcetera 
+User custom theming - Allow the default theme to be set in the admin as well as on the user level
+
+=== Future Features ===
+Poll page type - a type of page to handle polling and voting
+
+=== Future Options === 
+OpenId logins
+

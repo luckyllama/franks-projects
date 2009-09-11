@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="LuckyWiki" Class="LuckyWikiDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\frank\Projects\LuckyWiki\LuckyWiki.Web\App_Data\LuckyWiki.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="LuckyWiki.Data.LinqToSqlDataProvider.Properties.Settings" SettingsPropertyName="LuckyWikiConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.LW_WikiPages" Member="WikiPages">
+    <Type Name="WikiPage">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Content" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="WikiPageTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedByUserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Modified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedByUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="WikiPage_WikiPage" Member="Children" Storage="_WikiPages" ThisKey="Id" OtherKey="ParentId" Type="WikiPage" />
+      <Association Name="WikiPage_WikiPage_Tag" Member="WikiPage_Tags" ThisKey="Id" OtherKey="WikiPageId" Type="WikiPage_Tag" />
+      <Association Name="WikiPage_WikiPage" Member="Parent" Storage="_LW_WikiPage1" ThisKey="ParentId" OtherKey="Id" Type="WikiPage" IsForeignKey="true" />
+      <Association Name="User_WikiPage" Member="CreatingUser" ThisKey="CreatedByUserId" OtherKey="Id" Type="User" IsForeignKey="true" />
+      <Association Name="User_WikiPage1" Member="ModifyingUser" ThisKey="ModifiedByUserId" OtherKey="Id" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LW_Tags" Member="Tags">
+    <Type Name="Tag">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="Tag_WikiPage_Tag" Member="WikiPage_Tags" ThisKey="Id" OtherKey="TagId" Type="WikiPage_Tag" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LW_WikiPage_Tags" Member="WikiPage_Tags">
+    <Type Name="WikiPage_Tag">
+      <Column Name="TagId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="WikiPageId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Tag_WikiPage_Tag" Member="Tag" ThisKey="TagId" OtherKey="Id" Type="Tag" IsForeignKey="true" />
+      <Association Name="WikiPage_WikiPage_Tag" Member="WikiPage" ThisKey="WikiPageId" OtherKey="Id" Type="WikiPage" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LW_Users" Member="Users">
+    <Type Name="User">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="DisplayName" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="PasswordSalt" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="Status" Member="StatusId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="IsAnonymous" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RegistrationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="false" />
+      <Association Name="User_WikiPage" Member="WikiPages" ThisKey="Id" OtherKey="CreatedByUserId" Type="WikiPage" />
+      <Association Name="User_WikiPage1" Member="WikiPages1" ThisKey="Id" OtherKey="ModifiedByUserId" Type="WikiPage" />
+      <Association Name="User_User_Role" Member="User_Roles" ThisKey="Id" OtherKey="UserId" Type="User_Role" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LW_Roles" Member="Roles">
+    <Type Name="Role">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(256) NOT NULL" CanBeNull="false" />
+      <Association Name="Role_User_Role" Member="User_Roles" ThisKey="Id" OtherKey="RoleId" Type="User_Role" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LW_User_Roles" Member="User_Roles">
+    <Type Name="User_Role">
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Role_User_Role" Member="Role" ThisKey="RoleId" OtherKey="Id" Type="Role" IsForeignKey="true" />
+      <Association Name="User_User_Role" Member="User" ThisKey="UserId" OtherKey="Id" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

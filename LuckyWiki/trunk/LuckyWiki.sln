@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckyWiki.Web", "LuckyWiki.Web\LuckyWiki.Web.csproj", "{FA087811-085C-433C-A2B4-54FDB8FB9B61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckyWiki.Tests", "LuckyWiki.Tests\LuckyWiki.Tests.csproj", "{DACE3C50-D494-4BAE-9D19-592E95F41DD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckyWiki", "LuckyWiki\LuckyWiki.csproj", "{DAFD860C-ACA2-4FBF-83EC-D44AAD9D7660}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckyWiki.LinqToSqlDataProvider", "LuckyWiki.LinqToSqlDataProvider\LuckyWiki.LinqToSqlDataProvider.csproj", "{D7EF10D7-B029-438F-B920-7F321A6695A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA087811-085C-433C-A2B4-54FDB8FB9B61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA087811-085C-433C-A2B4-54FDB8FB9B61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA087811-085C-433C-A2B4-54FDB8FB9B61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA087811-085C-433C-A2B4-54FDB8FB9B61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DACE3C50-D494-4BAE-9D19-592E95F41DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACE3C50-D494-4BAE-9D19-592E95F41DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACE3C50-D494-4BAE-9D19-592E95F41DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACE3C50-D494-4BAE-9D19-592E95F41DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAFD860C-ACA2-4FBF-83EC-D44AAD9D7660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAFD860C-ACA2-4FBF-83EC-D44AAD9D7660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAFD860C-ACA2-4FBF-83EC-D44AAD9D7660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAFD860C-ACA2-4FBF-83EC-D44AAD9D7660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7EF10D7-B029-438F-B920-7F321A6695A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7EF10D7-B029-438F-B920-7F321A6695A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7EF10D7-B029-438F-B920-7F321A6695A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7EF10D7-B029-438F-B920-7F321A6695A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

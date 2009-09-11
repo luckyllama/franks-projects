@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12.625, 8.5" name="LuckyWiki">
+  <DataContextMoniker Name="/LuckyWikiDataContext" />
+  <nestedChildShapes>
+    <classShape Id="04373e07-8b9c-4fa2-84de-c44947ff72f4" absoluteBounds="4.875, 1, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/LuckyWikiDataContext/WikiPage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a3216248-c8b0-4a53-ad7d-7f17e9beda04" absoluteBounds="4.8900000000000006, 1.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2cb7b9f5-cbba-464a-b154-a647807847b0" absoluteBounds="10.375, 1.75, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/LuckyWikiDataContext/Tag" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9bb3d38d-db93-4981-9ec0-6317bc078858" absoluteBounds="10.39, 2.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.58423076923077 : 3.5401025390625); (5.58423076923077 : 3.7901025390625); (6.17961538461539 : 3.7901025390625); (6.17961538461539 : 3.5401025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LuckyWikiDataContext/WikiPage/WikiPage_WikiPage" />
+      <nodes>
+        <classShapeMoniker Id="04373e07-8b9c-4fa2-84de-c44947ff72f4" />
+        <classShapeMoniker Id="04373e07-8b9c-4fa2-84de-c44947ff72f4" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="9c45819c-00b8-41b8-92fe-d7c83aa9defa" absoluteBounds="7.625, 1.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/LuckyWikiDataContext/WikiPage_Tag" />
+      <nestedChildShapes>
+        <elementListCompartment Id="80c44794-4ad4-4920-8022-140aa90e8772" absoluteBounds="7.64, 2.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.375 : 2.34699625651042); (9.625 : 2.34699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LuckyWikiDataContext/Tag/Tag_WikiPage_Tag" />
+      <nodes>
+        <classShapeMoniker Id="2cb7b9f5-cbba-464a-b154-a647807847b0" />
+        <classShapeMoniker Id="9c45819c-00b8-41b8-92fe-d7c83aa9defa" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.875 : 2.34699625651042); (7.625 : 2.34699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LuckyWikiDataContext/WikiPage/WikiPage_WikiPage_Tag" />
+      <nodes>
+        <classShapeMoniker Id="04373e07-8b9c-4fa2-84de-c44947ff72f4" />
+        <classShapeMoniker Id="9c45819c-00b8-41b8-92fe-d7c83aa9defa" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d40143de-9ce4-411a-bba1-473f0ebb1a2b" absoluteBounds="0.5, 1, 2, 2.5401025390625">
+      <DataClassMoniker Name="/LuckyWikiDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="47beea37-7330-4f9b-8cbd-7ccaf64151fe" absoluteBounds="0.51500000000000012, 1.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b3d3644c-7c4b-43cf-a7d3-8a8bfbfe0c29" absoluteBounds="0.5, 5.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/LuckyWikiDataContext/Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cac39723-79bb-4f5d-8770-563e4296e170" absoluteBounds="0.51500000000000012, 6.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e74b4429-89b9-47a9-855b-e66b6a6cc4d2" absoluteBounds="0.5, 4, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/LuckyWikiDataContext/User_Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6546d5f2-d8b4-45c8-a6f7-c5c431d1e109" absoluteBounds="0.51500000000000012, 4.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 2.59477640787761); (4.875 : 2.59477640787761)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LuckyWikiDataContext/User/User_WikiPage" />
+      <nodes>
+        <classShapeMoniker Id="d40143de-9ce4-411a-bba1-473f0ebb1a2b" />
+        <classShapeMoniker Id="04373e07-8b9c-4fa2-84de-c44947ff72f4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 1.7348882039388); (4.875 : 1.7348882039388)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LuckyWikiDataContext/User/User_WikiPage1" />
+      <nodes>
+        <classShapeMoniker Id="d40143de-9ce4-411a-bba1-473f0ebb1a2b" />
+        <classShapeMoniker Id="04373e07-8b9c-4fa2-84de-c44947ff72f4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.5 : 5.75); (1.5 : 5.19399251302083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LuckyWikiDataContext/Role/Role_User_Role" />
+      <nodes>
+        <classShapeMoniker Id="b3d3644c-7c4b-43cf-a7d3-8a8bfbfe0c29" />
+        <classShapeMoniker Id="e74b4429-89b9-47a9-855b-e66b6a6cc4d2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.5 : 3.5401025390625); (1.5 : 4)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LuckyWikiDataContext/User/User_User_Role" />
+      <nodes>
+        <classShapeMoniker Id="d40143de-9ce4-411a-bba1-473f0ebb1a2b" />
+        <classShapeMoniker Id="e74b4429-89b9-47a9-855b-e66b6a6cc4d2" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
