@@ -1,0 +1,1 @@
+This is an assortment of code from various projects I've worked on throughout the years.
